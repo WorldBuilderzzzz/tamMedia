@@ -1,0 +1,21 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1438 888" width="1438" height="888">
+	<title>Glassy Background</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,982,-1512,0,696,-58)">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="1" stop-color="#999999"/>
+		</linearGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,982,-1513.082,0,696,-58)">
+			<stop offset="0" stop-color="#767676"/>
+			<stop offset="1" stop-color="#000000"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { opacity: .4;fill: url(#g1) } 
+		.s1 { opacity: .4;fill: none;stroke: url(#g2);stroke-width: 2 } 
+	</style>
+	<g>
+		<path fill-rule="evenodd" class="s0" d="m40-58h1312c55.23 0 100 44.77 100 100v782c0 55.23-44.77 100-100 100h-1312c-55.23 0-100-44.77-100-100v-782c0-55.23 44.77-100 100-100z"/>
+		<path fill-rule="evenodd" class="s1" d="m40-57h1312c54.68 0 99 44.32 99 99v782c0 54.68-44.32 99-99 99h-1312c-54.68 0-99-44.32-99-99v-782c0-54.68 44.32-99 99-99z"/>
+	</g>
+</svg>

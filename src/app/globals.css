@@ -6,3 +6,16 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+.noise-bg {
+  position: relative;
+  background: #f9f9f9; /* رنگ پس‌زمینه‌ات */
+}
+
+.noise-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/backgrounds/noise.svg"); /* خروجی فیگما */
+  opacity: 0.25; /* مثل همون #000 25% */
+  pointer-events: none; /* کلیک‌پذیر نشه */
+}

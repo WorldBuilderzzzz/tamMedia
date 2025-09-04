@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "./font.css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-anonymous-pro: 'AnonymousPro';
+  --font-yekan-bakh: 'yekanBakh';
+}

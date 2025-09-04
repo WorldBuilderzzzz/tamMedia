@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'AnonymousPro';
+    src: url('/fonts/AnonymousPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "yekanBakh";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('/fonts/YekanBakh-Thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "yekanBakh";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/YekanBakh-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "yekanBakh";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/YekanBakh-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "yekanBakh";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/YekanBakh-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "yekanBakh";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/YekanBakh-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "yekanBakh";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/YekanBakh-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "yekanBakh";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/fonts/YekanBakh-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "yekanBakh";
+    font-style: normal;
+    font-weight: 950;
+    font-display: swap;
+    src: url('/fonts/YekanBakh-ExtraBlack.otf') format('opentype');
+}

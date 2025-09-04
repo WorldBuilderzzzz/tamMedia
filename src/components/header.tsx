@@ -10,7 +10,7 @@ const Header = () => {
                         <img src="/images/logo.svg" alt="logo" className="px-4 md:px-0" />
                     </div>
                     <div className="flex flex-col items-center justify-center gap-15">
-                        <div className="flex items-center md:justify-around justify-between w-full font-yekan-bakh md:text-2xl text-xl opacity-80">
+                        <div className="flex items-center md:justify-around justify-between w-full font-yekan-bakh md:text-2xl text-[16px] opacity-80">
                             <div>ارتباط با ما</div>
                             <div>پروژه‌ها</div>
                             <div>خدمات ما</div>

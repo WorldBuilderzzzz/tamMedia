@@ -7,7 +7,7 @@ const Header = () => {
                 <img src="/images/Frame 28.png" alt="background" className="absolute top-0 left-0 w-full h-full opacity-80 brightness-125" />
                 <div className="absolute top-0 left-0 w-full h-full grid grid-rows-[1fr_auto] md:py-10 py-5 px-10">
                     <div className="flex items-center justify-center">
-                        <img src="/images/Logo.svg" alt="logo" className="px-4 md:px-0" />
+                        <img src="./images/Logo.svg" alt="logo" className="px-4 md:px-0" />
                     </div>
                     <div className="flex flex-col items-center justify-center gap-20">
                         <div className="flex items-center md:justify-around justify-between w-full font-yekan-bakh md:text-3xl text-2xl opacity-80">

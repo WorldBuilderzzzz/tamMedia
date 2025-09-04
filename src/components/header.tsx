@@ -5,12 +5,12 @@ const Header = () => {
             <div className="bg-blue-800/50 w-[400px] h-[400px] rounded-[100px] absolute -bottom-14 -left-22 rotate-[-25deg] "></div>
             <div className="absolute top-0 left-0 w-full h-full backdrop-blur-[90px] inset-0 bg-black/10">
                 <img src="/images/Frame 28.png" alt="background" className="absolute top-0 left-0 w-full h-full opacity-80 brightness-125" />
-                <div className="absolute top-0 left-0 w-full h-full grid grid-rows-[1fr_auto] p-10">
+                <div className="absolute top-0 left-0 w-full h-full grid grid-rows-[1fr_auto] md:py-10 py-5 px-10">
                     <div className="flex items-center justify-center">
-                        <img src="/images/Logo.svg" alt="logo" className="" />
+                        <img src="/images/Logo.svg" alt="logo" className="px-4 md:px-0" />
                     </div>
                     <div className="flex flex-col items-center justify-center gap-20">
-                        <div className="flex items-center justify-around w-full font-yekan-bakh text-3xl opacity-80">
+                        <div className="flex items-center md:justify-around justify-between w-full font-yekan-bakh md:text-3xl text-2xl opacity-80">
                             <div>ارتباط با ما</div>
                             <div>پروژه‌ها</div>
                             <div>خدمات ما</div>

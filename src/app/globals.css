@@ -15,7 +15,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/backgrounds/noise.svg"); /* خروجی فیگما */
-  opacity: 0.25; /* مثل همون #000 25% */
-  pointer-events: none; /* کلیک‌پذیر نشه */
+  background: url("/backgrounds/noise.svg");
+  opacity: 0.25; 
+  pointer-events: none;
 }

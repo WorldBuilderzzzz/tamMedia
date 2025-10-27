@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa-IR">
-      <body>
+      <body dir="rtl">
         {children}
       </body>
     </html>

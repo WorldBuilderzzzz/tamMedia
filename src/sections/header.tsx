@@ -11,7 +11,7 @@ const Header = () => {
                     <div>نتیجه ها</div>
                     <div>خدمات ما</div>
                 </div>
-                <div className="rotate-90 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer">{'>'}</div>
+                <div className="rotate-270 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer">{'>'}</div>
             </div>
         </div>
     )

@@ -1,18 +1,12 @@
 interface TitleGlassProps {
-    src: string;
+    title: string;
 }
-export default function TitleGlass({ src } : TitleGlassProps) {
+export default function TitleGlass({ title } : TitleGlassProps) {
     return(
-        <div className="w-full flex items-center justify-center px-19 py-10 rounded-[50px] bg-[#002FFF05]/10 border border-white/30 text-black backdrop-blur-[20px] text-[50px] font-bold scale-90">
-            <img src="/images/media.svg" alt="titleGlass" className="inline-block mr-6" style={{
-                filter: "drop-shadow(0 0 30px rgba(223, 61, 40, 0.5))",
-            }} />
-            <img src="/images/tam.svg" alt="titleGlass" className="inline-block mr-6" style={{
-                filter: "drop-shadow(0 0 30px rgba(2, 5, 182, 0.5))",
-            }} />
-            <img src={src} alt="titleGlass" className="inline-block" style={{
-                filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))",
-            }} />
+        <div className="w-full flex items-center justify-center gap-5 text-[70px] font-yekan-bakh py-1 rounded-[40px] bg-[#002FFF05]/10 border border-white/30 text-black backdrop-blur-[20px] font-bold">
+            <span style={{filter: "drop-shadow(0 0 30px rgba(0, 0, 0, 0.7))"}}>{title}</span>
+            <span className="text-[#0205B6]" style={{filter: "drop-shadow(0 0 30px rgba(2, 5, 182, 0.5))"}}>تـــــام</span>
+            <span className="text-[#DF3D28]" style={{filter: "drop-shadow(0 0 30px rgba(223, 61, 40, 0.5))"}}>مدیــا</span>
         </div>
     )
 }

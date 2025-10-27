@@ -3,9 +3,16 @@ import Contact from "@/sections/contact";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
-      <Header />
-      <Contact />
+    <div className="h-dvh w-dvw relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full inset-0 bg-black/10">
+          <img src="/images/noise.png" alt="background" className="absolute top-0 left-0 w-full h-full opacity-50" />
+          <img src="/images/redEllipse.svg" alt="redEllipse" className="absolute -top-10 -left-10" />
+          <img src="/images/blueEllipse.svg" alt="blueEllipse" className="absolute -bottom-10 -right-10" />
+          <div className="overflow-y-auto h-full absolute top-0 left-0 w-full">
+            <Header />
+            <Contact />
+          </div>
+        </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 export default function Contact() {
     return(
-        <div className="min-h-dvh">
+        <div className="h-dvh">
             <h1>Contact</h1>
         </div>
     )

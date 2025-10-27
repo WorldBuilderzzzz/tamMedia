@@ -8,7 +8,7 @@ export default function Home() {
           <img src="/images/noise.png" alt="background" className="absolute top-0 left-0 w-full h-full opacity-50" />
           <img src="/images/redEllipse.svg" alt="redEllipse" className="absolute -top-10 -left-10" />
           <img src="/images/blueEllipse.svg" alt="blueEllipse" className="absolute -bottom-10 -right-10" />
-          <div className="overflow-y-auto h-full absolute top-0 left-0 w-full">
+          <div className="overflow-y-auto scroll-smooth h-full absolute top-0 left-0 w-full">
             <Header />
             <Contact />
           </div>

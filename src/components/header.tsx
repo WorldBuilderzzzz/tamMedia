@@ -1,6 +1,8 @@
 const Header = () => {
     return(
         <div className="h-dvh w-dvw relative overflow-hidden">
+            <img src="/images/redEllipse.svg" alt="redEllipse" className="absolute -top-10 -left-10" />
+            <img src="/images/blueEllipse.svg" alt="blueEllipse" className="absolute -bottom-10 -right-10" />
             <div className="absolute top-0 left-0 w-full h-full inset-0 bg-black/10">
                 <img src="/images/noise.png" alt="background" className="absolute top-0 left-0 w-full h-full opacity-50" />
                 <div className="absolute top-0 left-0 w-full h-full grid grid-rows-[1fr_auto] md:py-5 py-5 px-10">

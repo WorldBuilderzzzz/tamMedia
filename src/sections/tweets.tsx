@@ -26,12 +26,12 @@ export default function Tweets () {
                     modules={[Autoplay]}
                     loop={true}
                     slidesPerView={2.6}
-                    spaceBetween={40}
+                    spaceBetween={0}
                     autoplay={{ delay: 2000, disableOnInteraction: false }}
                 >
                     {tweets.map((tweet) => (
                         <SwiperSlide key={tweet.id}>
-                            <div className="bg-white px-8 py-4 rounded-4xl space-y-4 border border-gray-300 leading-8">
+                            <div className="bg-white mr-6 px-8 py-4 rounded-[40px] space-y-4 border border-gray-300 leading-8">
                                 <div className="flex items-center justify-between">
                                     <div className="flex gap-2 items-center">
                                         <Avatar className='w-13 h-13'>
@@ -40,7 +40,7 @@ export default function Tweets () {
                                         </Avatar>
                                         <div className="text-lg font-bold">{tweet.title}</div>
                                     </div>
-                                    <div dir='ltr' className='text-[#7C7C7C]'>@{tweet.instagram_id}</div>
+                                    <div dir='ltr' className='text-[#7C7C7C] font-vazir-matn text-sm'>@{tweet.instagram_id}</div>
                                 </div>
                                 <div className="font-light">{tweet.description}</div>
                             </div>

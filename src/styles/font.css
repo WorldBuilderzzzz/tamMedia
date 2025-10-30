@@ -68,3 +68,12 @@
     font-display: swap;
     src: url('/fonts/YekanBakh-ExtraBlack.otf') format('opentype');
 }
+
+
+@font-face {
+    font-family: "vazirMatn";
+    font-style: bold;
+    font-weight: bold;
+    font-display: swap;
+    src: url('/fonts/Vazirmatn-Bold.ttf') format('truetype');
+}

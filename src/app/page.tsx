@@ -1,5 +1,6 @@
 import Header from "@/sections/header";
 import Contact from "@/sections/contact";
+import Tweets from "@/sections/tweets";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
           <div dir="ltr" className="overflow-y-auto scroll-smooth h-full absolute top-0 left-0 w-full">
             <div dir="rtl">
               <Header />
+              <Tweets />
               <Contact />
             </div>
           </div>

@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import profile from "../../public/images/profile.png";
 
 import TitleGlass from "@/components/titleGlass";
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -35,7 +36,7 @@ export default function Tweets () {
                                 <div className="flex items-center justify-between">
                                     <div className="flex gap-2 items-center">
                                         <Avatar className='w-13 h-13'>
-                                            <AvatarImage src={`/images/${tweet.image}.png`} alt={tweet.title} />
+                                            <AvatarImage src={profile.src} alt={tweet.title} />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
                                         <div className="text-lg font-bold">{tweet.title}</div>

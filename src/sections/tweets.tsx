@@ -2,7 +2,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import profile from "../../public/images/profile.png";
 
 import TitleGlass from "@/components/titleGlass";
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -35,10 +34,7 @@ export default function Tweets () {
                             <div className="bg-white mr-6 px-8 py-4 rounded-[40px] space-y-4 border border-gray-300 leading-8">
                                 <div className="flex items-center justify-between">
                                     <div className="flex gap-2 items-center">
-                                        <Avatar className='w-13 h-13'>
-                                            <AvatarImage src={profile.src} alt={tweet.title} />
-                                            <AvatarFallback>CN</AvatarFallback>
-                                        </Avatar>
+                                        <img className='w-13 h-13 object-cover' src={`/images/${tweet.image}.png`} alt={tweet.title}/>
                                         <div className="text-lg font-bold">{tweet.title}</div>
                                     </div>
                                     <div dir='ltr' className='text-[#7C7C7C] font-vazir-matn text-sm'>@{tweet.instagram_id}</div>

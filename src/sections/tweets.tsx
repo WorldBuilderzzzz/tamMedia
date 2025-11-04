@@ -30,7 +30,7 @@ export default function Tweets () {
                 >
                     {tweets.map((tweet) => (
                         <SwiperSlide key={tweet.id}>
-                            <div className="bg-white/20 mr-6 px-8 py-4 h-full rounded-[40px] space-y-4 border backdrop-blur-[20px] border-[#7C7C7C] leading-8">
+                            <div className="bg-white/20 mr-6 pr-8 pl-15 py-4 h-full rounded-[40px] space-y-4 border backdrop-blur-[20px] border-[#7C7C7C] leading-8">
                                 <div className="flex items-center justify-between">
                                     <div className="flex gap-2 items-center">
                                         <img className='w-13 h-13 object-cover' src={`/images/${tweet.image}.png`} alt={tweet.title}/>
@@ -40,8 +40,8 @@ export default function Tweets () {
                                 </div>
                                 <div className="font-light">{tweet.description}</div>
                                 <div className="flex gap-2">
-                                    {tweet.firstBadge && <div className="border border-[#D13926] bg-[#D1392680] rounded-full text-sm px-5 py-2">{tweet.firstBadge}</div>}
-                                    {tweet.secondBadge && <div className="border border-[#0205B6] bg-[#0205B680] rounded-full text-sm px-5 py-2">{tweet.secondBadge}</div>}
+                                    {tweet.firstBadge && <div className="border border-[#D13926] bg-[#D1392680] rounded-full text-xs px-5 py-2">{tweet.firstBadge}</div>}
+                                    {tweet.secondBadge && <div className="border border-[#0205B6] bg-[#0205B680] rounded-full text-xs px-5 py-2">{tweet.secondBadge}</div>}
                                 </div>
                             </div>
                         </SwiperSlide>

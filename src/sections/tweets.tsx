@@ -30,7 +30,7 @@ export default function Tweets () {
                 >
                     {tweets.map((tweet) => (
                         <SwiperSlide key={tweet.id}>
-                            <div className="bg-white mr-6 px-8 py-4 rounded-[40px] space-y-4 border border-gray-300 leading-8">
+                            <div className="bg-white/20 mr-6 px-8 py-4 rounded-[40px] space-y-4 border backdrop-blur-[20px] border-[#7C7C7C] leading-8">
                                 <div className="flex items-center justify-between">
                                     <div className="flex gap-2 items-center">
                                         <img className='w-13 h-13 object-cover' src={`/images/${tweet.image}.png`} alt={tweet.title}/>

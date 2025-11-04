@@ -4,7 +4,6 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 import TitleGlass from "@/components/titleGlass";
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 export default function Tweets () {
 

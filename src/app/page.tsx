@@ -21,13 +21,13 @@ export default function Home() {
           }}></div>
         <div dir="ltr" className="overflow-y-auto scroll-smooth h-full absolute top-0 left-0 w-full snap-y snap-mandatory">
             <div dir="rtl">
-              <div className="snap-start">
+              <div id="header" className="snap-start">
                 <Header />
               </div>
-              <div className="snap-start">
+              <div id="tweets" className="snap-start">
                 <Tweets />
               </div>
-              <div className="snap-start">
+              <div id="contact" className="snap-start">
                 <Contact />
               </div>
             </div>

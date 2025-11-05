@@ -6,7 +6,7 @@ const Header = () => {
                 <img src="/images/tamMedia.svg" alt="tamMedia" className="px-4 md:px-0 w-[250px] md:w-[350px] scale-150" />
             </div>
             <div className="flex flex-col items-center justify-center gap-4">
-                <div className="flex items-center md:justify-around gap-40 font-yekan-bakh md:text-xl text-[16px] bg-[#002FFF05] backdrop-blur-[100px] px-18 py-7 rounded-full">
+                <div className="flex items-center md:justify-around gap-40 font-yekan-bakh md:text-xl text-[16px] bg-[#002FFF05] backdrop-blur-[20px] px-18 py-7 rounded-full">
                     <div>ارتباط با ما</div>
                     <div>نتیجه ها</div>
                     <div>خدمات ما</div>

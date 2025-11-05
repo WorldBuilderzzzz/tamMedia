@@ -19,11 +19,17 @@ export default function Home() {
                 bottom: '-217px',
                 right: '16px',
           }}></div>
-          <div dir="ltr" className="overflow-y-auto scroll-smooth h-full absolute top-0 left-0 w-full">
+        <div dir="ltr" className="overflow-y-auto scroll-smooth h-full absolute top-0 left-0 w-full snap-y snap-mandatory">
             <div dir="rtl">
-              <Header />
-              <Tweets />
-              <Contact />
+              <div className="snap-start">
+                <Header />
+              </div>
+              <div className="snap-start">
+                <Tweets />
+              </div>
+              <div className="snap-start">
+                <Contact />
+              </div>
             </div>
           </div>
         </div>

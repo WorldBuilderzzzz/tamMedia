@@ -51,7 +51,6 @@ export default function Tweets () {
                     ))}
                 </Swiper>
             </div>
-            {/* <divclassName=""></div> */}
             <div onClick={() => scrollTo('contact')}  className="w-10 h-10 mt-auto mx-auto rotate-270 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer">{'>'}</div>
         </div>
     )

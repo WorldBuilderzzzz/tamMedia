@@ -6,7 +6,10 @@ import 'swiper/css';
 import TitleGlass from "@/components/titleGlass";
 
 export default function Tweets () {
-
+    const scrollTo = (id: string) => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
     const tweets: {id: string, title: string, firstBadge?: string, secondBadge?: string, instagram_id: string, image: string, description: string,}[] = [
         {id: "1", title: "خانم تام‌مدیانژاد", instagram_id: "tamMediaNezhad", image: "Profile",  description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
         {id: "2", title: "خانم تام‌مدیا کلاب", instagram_id: "tamMediaClub", image: "Profile", description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
@@ -15,7 +18,7 @@ export default function Tweets () {
     ]
     
     return(
-        <div className="h-dvh py-10 flex flex-col gap-40 font-yekan-bakh">
+        <div className="h-dvh py-10 flex flex-col gap-23 font-yekan-bakh">
             <div className="px-60">
                 <TitleGlass title="نتیجه همکاری با" />
             </div>
@@ -48,6 +51,8 @@ export default function Tweets () {
                     ))}
                 </Swiper>
             </div>
+            {/* <divclassName=""></div> */}
+            <div onClick={() => scrollTo('contact')}  className="w-10 h-10 mt-auto mx-auto rotate-270 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer">{'>'}</div>
         </div>
     )
 }

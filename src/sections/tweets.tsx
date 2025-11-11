@@ -55,12 +55,6 @@ export default function Tweets () {
                         <SwiperSlide key={tweet.id}>
                             <motion.div
                                 className="bg-white/20 mr-6 pr-8 pl-15 py-4 h-full rounded-[40px] space-y-4 border backdrop-blur-[20px] border-[#7C7C7C] leading-8"
-                                whileHover={{
-                                    scale: 1.03,
-                                    borderColor: "#0205AD",
-                                    boxShadow: "0 10px 40px rgba(2, 5, 173, 0.2)"
-                                }}
-                                transition={{ duration: 0.3 }}
                             >
                                 <div className="flex items-center justify-between">
                                     <div className="flex gap-2 items-center">
@@ -78,22 +72,14 @@ export default function Tweets () {
                                 <div className="font-light">{tweet.description}</div>
                                 <div className="flex gap-2">
                                     {tweet.firstBadge && (
-                                        <motion.div
-                                            className="border border-[#D13926] bg-[#D1392680] rounded-full text-xs px-5 py-2"
-                                            whileHover={{ scale: 1.05, backgroundColor: "#D13926" }}
-                                            transition={{ duration: 0.2 }}
-                                        >
+                                        <div className="border border-[#D13926] bg-[#D1392680] rounded-full text-xs px-5 py-2">
                                             {tweet.firstBadge}
-                                        </motion.div>
+                                        </div>
                                     )}
                                     {tweet.secondBadge && (
-                                        <motion.div
-                                            className="border border-[#0205B6] bg-[#0205B680] rounded-full text-xs px-5 py-2"
-                                            whileHover={{ scale: 1.05, backgroundColor: "#0205B6" }}
-                                            transition={{ duration: 0.2 }}
-                                        >
+                                        <div className="border border-[#0205B6] bg-[#0205B680] rounded-full text-xs px-5 py-2">
                                             {tweet.secondBadge}
-                                        </motion.div>
+                                        </div>
                                     )}
                                 </div>
                             </motion.div>

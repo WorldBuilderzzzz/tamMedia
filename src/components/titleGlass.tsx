@@ -26,14 +26,10 @@ export default function TitleGlass({ title } : TitleGlassProps) {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            whileHover={{
-                borderColor: "rgba(2, 5, 182, 0.4)",
-                boxShadow: "0 10px 50px rgba(2, 5, 182, 0.15)"
-            }}
         >
             <motion.span
                 style={{filter: "drop-shadow(0 0 30px rgba(0, 0, 0, 0.7))"}}
-                variants={wordVariants}
+                variants={wordVariants as any}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -44,15 +40,11 @@ export default function TitleGlass({ title } : TitleGlassProps) {
             <motion.span
                 className="text-[#0205B6]"
                 style={{filter: "drop-shadow(0 0 30px rgba(2, 5, 182, 0.5))"}}
-                variants={wordVariants}
+                variants={wordVariants as any}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 custom={1}
-                whileHover={{
-                    scale: 1.1,
-                    filter: "drop-shadow(0 0 40px rgba(2, 5, 182, 0.8))"
-                }}
                 transition={{ duration: 0.3 }}
             >
                 تـــــام
@@ -60,15 +52,11 @@ export default function TitleGlass({ title } : TitleGlassProps) {
             <motion.span
                 className="text-[#DF3D28]"
                 style={{filter: "drop-shadow(0 0 30px rgba(223, 61, 40, 0.5))"}}
-                variants={wordVariants}
+                variants={wordVariants as any}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 custom={2}
-                whileHover={{
-                    scale: 1.1,
-                    filter: "drop-shadow(0 0 40px rgba(223, 61, 40, 0.8))"
-                }}
                 transition={{ duration: 0.3 }}
             >
                 مدیــا

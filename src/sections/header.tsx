@@ -56,13 +56,13 @@ const Header = () => {
                     src="/images/logo.svg"
                     alt="logo"
                     className="px-4 md:px-0 w-[400px] md:w-[550px]"
-                    variants={itemVariants}
+                    variants={itemVariants as any}
                 />
                 <motion.img
                     src="/images/tamMedia.svg"
                     alt="tamMedia"
                     className="px-4 md:px-0 w-[250px] md:w-[350px] scale-150"
-                    variants={itemVariants}
+                    variants={itemVariants as any}
                 />
             </div>
             <motion.div
@@ -72,7 +72,7 @@ const Header = () => {
                     <motion.button
                         onClick={() => scrollTo('tweets')}
                         className="focus:outline-none cursor-pointer"
-                        variants={buttonVariants}
+                        variants={buttonVariants as any}
                         custom={0}
                         whileHover={{ scale: 1.1, color: "#0205AD" }}
                         whileTap={{ scale: 0.95 }}
@@ -82,7 +82,7 @@ const Header = () => {
                     <motion.button
                         onClick={() => scrollTo('tweets')}
                         className="focus:outline-none cursor-pointer"
-                        variants={buttonVariants}
+                        variants={buttonVariants as any}
                         custom={1}
                         whileHover={{ scale: 1.1, color: "#DF3D28" }}
                         whileTap={{ scale: 0.95 }}
@@ -92,7 +92,7 @@ const Header = () => {
                     <motion.button
                         onClick={() => scrollTo('contact')}
                         className="focus:outline-none cursor-pointer"
-                        variants={buttonVariants}
+                        variants={buttonVariants as any}
                         custom={2}
                         whileHover={{ scale: 1.1, color: "#0205AD" }}
                         whileTap={{ scale: 0.95 }}

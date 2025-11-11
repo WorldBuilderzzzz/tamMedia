@@ -67,7 +67,6 @@ const Header = () => {
             </div>
             <motion.div
                 className="flex flex-col items-center justify-center gap-4"
-                variants={itemVariants}
             >
                 <div className="flex items-center md:justify-around gap-40 font-yekan-bakh md:text-xl text-[16px] bg-[#002FFF05] backdrop-blur-[20px] px-18 py-7 rounded-full">
                     <motion.button

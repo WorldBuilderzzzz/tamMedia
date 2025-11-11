@@ -90,22 +90,6 @@ export default function Tweets () {
             <motion.div
                 onClick={() => scrollTo('contact')}
                 className="w-10 h-10 mt-auto mx-auto rotate-270 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{
-                    opacity: 0.8,
-                    y: [0, -10, 0],
-                }}
-                viewport={{ once: true }}
-                transition={{
-                    opacity: { duration: 0.5 },
-                    y: {
-                        duration: 1.5,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }
-                }}
-                whileHover={{ scale: 1.2, opacity: 1 }}
-                whileTap={{ scale: 0.9 }}
             >
                 {'>'}
             </motion.div>

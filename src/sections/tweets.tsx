@@ -25,14 +25,14 @@ export default function Tweets () {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0 }}
         >
             <motion.div
                 className="px-60"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0, ease: [0.22, 1, 0.36, 1] }}
             >
                 <TitleGlass title="نتیجه همکاری با" />
             </motion.div>

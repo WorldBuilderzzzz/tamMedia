@@ -20,13 +20,7 @@ export default function TitleGlass({ title } : TitleGlassProps) {
     };
 
     return(
-        <motion.div
-            className="w-full flex items-center justify-center gap-5 text-[70px] font-yekan-bakh py-1 rounded-[40px] bg-[#002FFF05]/10 border border-white/30 text-black backdrop-blur-[20px] font-bold"
-            initial={{ opacity: 0, scale: 0.95, y: 30 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        >
+        <div className="w-full flex items-center justify-center gap-5 text-[70px] font-yekan-bakh py-1 rounded-[40px] bg-[#002FFF05]/10 border border-white/30 text-black backdrop-blur-[20px] font-bold">
             <motion.span
                 style={{filter: "drop-shadow(0 0 30px rgba(0, 0, 0, 0.7))"}}
                 variants={wordVariants as any}
@@ -61,6 +55,6 @@ export default function TitleGlass({ title } : TitleGlassProps) {
             >
                 مدیــا
             </motion.span>
-        </motion.div>
+        </div>
     )
 }

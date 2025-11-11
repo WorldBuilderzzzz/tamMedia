@@ -1,11 +1,11 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 interface TitleGlassProps {
     title: string;
 }
 export default function TitleGlass({ title } : TitleGlassProps) {
-    const wordVariants = {
+    const wordVariants: Variants = {
         hidden: { opacity: 0, y: 20, scale: 0.9 },
         visible: (i: number) => ({
             opacity: 1,
@@ -23,7 +23,7 @@ export default function TitleGlass({ title } : TitleGlassProps) {
         <div className="w-full flex items-center justify-center gap-5 text-[70px] font-yekan-bakh py-1 rounded-[40px] bg-[#002FFF05]/10 border border-white/30 text-black backdrop-blur-[20px] font-bold">
             <motion.span
                 style={{filter: "drop-shadow(0 0 30px rgba(0, 0, 0, 0.7))"}}
-                variants={wordVariants as any}
+                variants={wordVariants}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -34,7 +34,7 @@ export default function TitleGlass({ title } : TitleGlassProps) {
             <motion.span
                 className="text-[#0205B6]"
                 style={{filter: "drop-shadow(0 0 30px rgba(2, 5, 182, 0.5))"}}
-                variants={wordVariants as any}
+                variants={wordVariants}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -46,7 +46,7 @@ export default function TitleGlass({ title } : TitleGlassProps) {
             <motion.span
                 className="text-[#DF3D28]"
                 style={{filter: "drop-shadow(0 0 30px rgba(223, 61, 40, 0.5))"}}
-                variants={wordVariants as any}
+                variants={wordVariants}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

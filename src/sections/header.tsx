@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const Header = () => {
     const scrollTo = (id: string) => {
@@ -7,7 +7,7 @@ const Header = () => {
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -18,7 +18,7 @@ const Header = () => {
         }
     };
 
-    const itemVariants = {
+    const itemVariants: Variants = {
         hidden: { opacity: 0, y: 40, scale: 0.9 },
         visible: {
             opacity: 1,
@@ -31,7 +31,7 @@ const Header = () => {
         }
     };
 
-    const buttonVariants = {
+    const buttonVariants: Variants = {
         hidden: { opacity: 0, y: 20 },
         visible: (i: number) => ({
             opacity: 1,
@@ -56,13 +56,13 @@ const Header = () => {
                     src="/images/logo.svg"
                     alt="logo"
                     className="px-4 md:px-0 w-[400px] md:w-[550px]"
-                    variants={itemVariants as any}
+                    variants={itemVariants}
                 />
                 <motion.img
                     src="/images/tamMedia.svg"
                     alt="tamMedia"
                     className="px-4 md:px-0 w-[250px] md:w-[350px] scale-150"
-                    variants={itemVariants as any}
+                    variants={itemVariants}
                 />
             </div>
             <motion.div
@@ -72,7 +72,7 @@ const Header = () => {
                     <motion.button
                         onClick={() => scrollTo('tweets')}
                         className="focus:outline-none cursor-pointer"
-                        variants={buttonVariants as any}
+                        variants={buttonVariants}
                         custom={0}
                         whileHover={{ scale: 1.1, color: "#0205AD" }}
                         whileTap={{ scale: 0.95 }}
@@ -82,7 +82,7 @@ const Header = () => {
                     <motion.button
                         onClick={() => scrollTo('tweets')}
                         className="focus:outline-none cursor-pointer"
-                        variants={buttonVariants as any}
+                        variants={buttonVariants}
                         custom={1}
                         whileHover={{ scale: 1.1, color: "#DF3D28" }}
                         whileTap={{ scale: 0.95 }}
@@ -92,7 +92,7 @@ const Header = () => {
                     <motion.button
                         onClick={() => scrollTo('contact')}
                         className="focus:outline-none cursor-pointer"
-                        variants={buttonVariants as any}
+                        variants={buttonVariants}
                         custom={2}
                         whileHover={{ scale: 1.1, color: "#0205AD" }}
                         whileTap={{ scale: 0.95 }}

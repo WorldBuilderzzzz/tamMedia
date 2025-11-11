@@ -101,28 +101,12 @@ const Header = () => {
                         ارتباط با ما
                     </motion.button>
                 </div>
-                <motion.div
+                <div
                     onClick={() => scrollTo('tweets')}
                     className="rotate-270 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{
-                        opacity: 0.8,
-                        y: [0, -10, 0],
-                    }}
-                    transition={{
-                        opacity: { delay: 1.6, duration: 0.5 },
-                        y: {
-                            delay: 2,
-                            duration: 1.5,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                        }
-                    }}
-                    whileHover={{ scale: 1.2, opacity: 1 }}
-                    whileTap={{ scale: 0.9 }}
                 >
                     {'>'}
-                </motion.div>
+                </div>
             </motion.div>
         </motion.div>
     )

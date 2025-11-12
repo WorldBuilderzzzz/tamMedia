@@ -21,7 +21,7 @@ export default function Tweets () {
 
     return(
         <motion.div
-            className="h-dvh py-10 flex flex-col gap-23 font-yekan-bakh"
+            className="h-dvh py-10 flex flex-col justify-between font-yekan-bakh"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -37,7 +37,7 @@ export default function Tweets () {
                 <TitleGlass title="نتیجه همکاری با" />
             </motion.div>
             <motion.div
-                className="w-full flex"
+                className="w-full flex "
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -101,7 +101,7 @@ export default function Tweets () {
             </motion.div>
             <div
                 onClick={() => scrollTo('contact')}
-                className="w-10 h-10 mt-auto mx-auto rotate-270 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer"
+                className="w-10 h-10 mx-auto rotate-270 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer"
             >
                 {'>'}
             </div>

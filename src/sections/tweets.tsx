@@ -52,17 +52,18 @@ export default function Tweets () {
                     loop={true}
                     slidesPerView={2.6}
                     spaceBetween={0}
-                    autoplay={{ delay: 2000, disableOnInteraction: false }}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
                 >
                     {tweets.map((tweet, index) => (
-                        <SwiperSlide key={tweet.id}>
+                        <SwiperSlide key={index}>
                             <motion.div
-                                className="bg-white/20 mr-6 pr-8 pl-15 py-4 h-full rounded-[40px] space-y-4 border backdrop-blur-[20px] border-[#7C7C7C] leading-8"
+                                className="bg-white/20 mr-6 pr-8 pl-15 py-4 h-full rounded-[40px] border backdrop-blur-[20px] border-[#7C7C7C] leading-8 hover:bg-white/10 group cursor-pointer transition-all duration-300"
                             >
+                                <a href={`https://www.instagram.com/${tweet.instagram_id}`} target='_blank' className='w-full h-full block space-y-4'>
                                 <div className="flex items-center justify-between">
                                     <div className="flex gap-2 items-center">
                                         <motion.img
-                                            className='w-13 h-13 object-cover rounded-full'
+                                            className='w-13 h-13 object-cover rounded-full group-hover:scale-110 transition-all duration-300'
                                             src={tweet.image === 'Profile' ? `/images/${tweet.image}.png` : `/images/${tweet.image}.JPG`}
                                             alt={tweet.title}
                                             whileHover={{ scale: 1.1, rotate: 5 }}
@@ -70,7 +71,7 @@ export default function Tweets () {
                                         />
                                         <div className="text-lg font-bold">{tweet.title}</div>
                                     </div>
-                                    <a href={`https://www.instagram.com/${tweet.instagram_id}`} target='_blank' dir='ltr' className='text-[#7C7C7C] hover:text-black transition-colors font-vazir-matn text-sm'>@{tweet.instagram_id}</a>
+                                    <a href={`https://www.instagram.com/${tweet.instagram_id}`} target='_blank' dir='ltr' className='text-[#7C7C7C] group-hover:text-black transition-colors font-vazir-matn text-sm'>@{tweet.instagram_id}</a>
                                 </div>
                                 <div className="font-light">{tweet.description}</div>
                                 <div className="flex gap-2">
@@ -80,6 +81,7 @@ export default function Tweets () {
                                         </a>
                                     ))}
                                 </div>
+                                </a>
                             </motion.div>
                         </SwiperSlide>
                     ))}

@@ -13,10 +13,13 @@ export default function Tweets () {
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     const tweets: {id: string, title: string, firstBadge?: string, secondBadge?: string, instagram_id: string, image: string, description: string,}[] = [
-        {id: "1", title: "خانم تام‌مدیانژاد", instagram_id: "tamMediaNezhad", image: "Profile",  description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
-        {id: "2", title: "خانم تام‌مدیا کلاب", instagram_id: "tamMediaClub", image: "Profile", description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
-        {id: "3", title: "خانم تام‌مدیانژاد", instagram_id: "tamMediaNezhad", firstBadge: 'کمپین یلدا', secondBadge: '+ 3 میلیون', image: "Profile", description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
-        {id: "4", title: "خانم تام‌مدیا کلاب", instagram_id: "tamMediaClub", image: "Profile", description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
+        // {id: "1", title: "خانم تام‌مدیانژاد", instagram_id: "tamMediaNezhad", image: "Profile",  description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
+        // {id: "2", title: "خانم تام‌مدیا کلاب", instagram_id: "tamMediaClub", image: "Profile", description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
+        {id: "1", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", firstBadge: 'کمپین یلدا', secondBadge: '+ 3 میلیون', image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
+        {id: "2", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", firstBadge: 'کمپین یلدا', secondBadge: '+ 3 میلیون', image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
+        {id: "3", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", firstBadge: 'کمپین یلدا', secondBadge: '+ 3 میلیون', image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
+        {id: "4", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", firstBadge: 'کمپین یلدا', secondBadge: '+ 3 میلیون', image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
+        // {id: "4", title: "خانم تام‌مدیا کلاب", instagram_id: "tamMediaClub", image: "Profile", description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
     ]
 
     return(
@@ -59,15 +62,15 @@ export default function Tweets () {
                                 <div className="flex items-center justify-between">
                                     <div className="flex gap-2 items-center">
                                         <motion.img
-                                            className='w-13 h-13 object-cover'
-                                            src={`/images/${tweet.image}.png`}
+                                            className='w-13 h-13 object-cover rounded-full'
+                                            src={tweet.image === 'Profile' ? `/images/${tweet.image}.png` : `/images/${tweet.image}.JPG`}
                                             alt={tweet.title}
                                             whileHover={{ scale: 1.1, rotate: 5 }}
                                             transition={{ duration: 0.3 }}
                                         />
                                         <div className="text-lg font-bold">{tweet.title}</div>
                                     </div>
-                                    <div dir='ltr' className='text-[#7C7C7C] font-vazir-matn text-sm'>@{tweet.instagram_id}</div>
+                                    <a href={`https://www.instagram.com/${tweet.instagram_id}`} target='_blank' dir='ltr' className='text-[#7C7C7C] hover:text-black transition-colors font-vazir-matn text-sm'>@{tweet.instagram_id}</a>
                                 </div>
                                 <div className="font-light">{tweet.description}</div>
                                 <div className="flex gap-2">

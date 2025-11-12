@@ -20,7 +20,7 @@ export default function Home() {
             style={{
               borderRadius: radiusShape,
               rotate: '207',
-              top: '-250px',
+              top: '-300px',
               left: '-40px',
             }}
             initial={{ scale: 0, opacity: 0 }}
@@ -40,7 +40,7 @@ export default function Home() {
             style={{
               borderRadius: radiusShape,
               rotate: '14deg',
-              bottom: '-217px',
+              bottom: '-300px',
               right: '16px',
             }}
             initial={{ scale: 0, opacity: 0 }}

@@ -1,14 +1,27 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import TitleGlass from "@/components/titleGlass";
 
 export default function Contact() {
     const contactItems = [
-        { name: "اینستاگرام", color: "#DF3D28" },
-        { name: "تلگرام", color: "#0205AD" },
-        { name: "ایمیل", color: "#DF3D28" },
-        { name: "تماس", color: "#0205AD" }
+        { name: "اینستاگرام", hoverColor: "#0205AD" },
+        { name: "تلگرام", hoverColor: "#DF3D28" },
+        { name: "ایمیل", hoverColor: "#0205AD" },
+        { name: "تماس", hoverColor: "#DF3D28" }
     ];
+
+    const buttonVariants: Variants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: (i: number) => ({
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: 1.2 + (i * 0.1),
+                duration: 0.5,
+                ease: "easeOut"
+            }
+        })
+    };
 
     return(
         <motion.div
@@ -47,19 +60,12 @@ export default function Contact() {
                     <motion.div
                         key={item.name}
                         className="cursor-pointer"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        variants={buttonVariants}
+                        initial="hidden"
+                        whileInView="visible"
                         viewport={{ once: true }}
-                        transition={{
-                            duration: 0.5,
-                            delay: 0.5 + (index * 0.1),
-                            ease: "easeOut"
-                        }}
-                        whileHover={{
-                            scale: 1.15,
-                            color: item.color,
-                            textShadow: `0 0 20px ${item.color}40`
-                        }}
+                        custom={index}
+                        whileHover={{ scale: 1.1, color: item.hoverColor, transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] } }}
                         whileTap={{ scale: 0.95 }}
                     >
                         {item.name}

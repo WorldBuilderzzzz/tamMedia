@@ -12,13 +12,13 @@ export default function Tweets () {
         const el = document.getElementById(id);
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-    const tweets: {id: string, title: string, firstBadge?: string, secondBadge?: string, instagram_id: string, image: string, description: string,}[] = [
+    const tweets: {id: string, title: string, badges?: {title: string, link: string}[], instagram_id: string, image: string, description: string,}[] = [
         // {id: "1", title: "خانم تام‌مدیانژاد", instagram_id: "tamMediaNezhad", image: "Profile",  description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
         // {id: "2", title: "خانم تام‌مدیا کلاب", instagram_id: "tamMediaClub", image: "Profile", description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
-        {id: "1", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", firstBadge: 'کمپین یلدا', secondBadge: '+ 3 میلیون', image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
-        {id: "2", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", firstBadge: 'کمپین یلدا', secondBadge: '+ 3 میلیون', image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
-        {id: "3", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", firstBadge: 'کمپین یلدا', secondBadge: '+ 3 میلیون', image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
-        {id: "4", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", firstBadge: 'کمپین یلدا', secondBadge: '+ 3 میلیون', image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
+        {id: "1", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", badges:[{title:'+8m', link:'https://www.instagram.com/reel/DN0MqaL2Jjz/?igsh=MWtuNjRmcDJza2VvZw=='},{title:'+3.5m', link:'https://www.instagram.com/reel/DN-1cYfjRMR/?igsh=bHN0M282ejl0MTh6'},{title:'+1.7m', link:'https://www.instagram.com/reel/DPBK1vRDSMA/?igsh=MWIzMW8wc3dzMnM4Nw=='}], image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
+        {id: "2", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
+        {id: "3", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
+        {id: "4", title: "سوگند نتاج", instagram_id: "SOGAND_NATAJ_", image: "sogand", description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنمگاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."},
         // {id: "4", title: "خانم تام‌مدیا کلاب", instagram_id: "tamMediaClub", image: "Profile", description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
     ]
 
@@ -74,16 +74,11 @@ export default function Tweets () {
                                 </div>
                                 <div className="font-light">{tweet.description}</div>
                                 <div className="flex gap-2">
-                                    {tweet.firstBadge && (
-                                        <div className="border border-[#D13926] bg-[#D1392680] rounded-full text-xs px-5 py-2">
-                                            {tweet.firstBadge}
-                                        </div>
-                                    )}
-                                    {tweet.secondBadge && (
-                                        <div className="border border-[#0205B6] bg-[#0205B680] rounded-full text-xs px-5 py-2">
-                                            {tweet.secondBadge}
-                                        </div>
-                                    )}
+                                    {tweet.badges && tweet.badges.map((badge, index) => (
+                                        <a href={badge.link} target='_blank' dir='ltr' className="border border-[#D13926] even:border-[#0205B6] bg-[#D1392680] even:bg-[#0205B680] rounded-full text-xs px-5 py-2 hover:scale-110 shadow hover:shadow-lg transition-all duration-300">
+                                            {badge.title}
+                                        </a>
+                                    ))}
                                 </div>
                             </motion.div>
                         </SwiperSlide>

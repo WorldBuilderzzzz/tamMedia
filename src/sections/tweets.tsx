@@ -75,7 +75,7 @@ export default function Tweets () {
                                 <div className="font-light">{tweet.description}</div>
                                 <div className="flex gap-2">
                                     {tweet.badges && tweet.badges.map((badge, index) => (
-                                        <a href={badge.link} target='_blank' dir='ltr' className="border border-[#D13926] even:border-[#0205B6] bg-[#D1392680] even:bg-[#0205B680] rounded-full text-xs px-5 py-2 hover:scale-110 shadow hover:shadow-lg transition-all duration-300">
+                                        <a key={index} href={badge.link} target='_blank' dir='ltr' className="border border-[#D13926] even:border-[#0205B6] bg-[#D1392680] even:bg-[#0205B680] rounded-full text-xs px-5 py-2 hover:scale-110 shadow hover:shadow-lg transition-all duration-300">
                                             {badge.title}
                                         </a>
                                     ))}

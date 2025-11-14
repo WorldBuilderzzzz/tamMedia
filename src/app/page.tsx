@@ -16,17 +16,17 @@ export default function Home() {
             className="absolute top-0 left-0 w-full h-full opacity-50"
           />
           <motion.div
-            className="absolute -top-10 -left-10 w-[300px] h-[300px] scale-200 bg-[#DF3D28]"
+            className="absolute top-[14px] -left-[23px] w-[118px] h-[100px] md:w-[300px] md:h-[300px] scale-200 bg-[#DF3D28]"
             style={{
               borderRadius: radiusShape,
-              rotate: '207',
-              top: '-300px',
-              left: '-40px',
+              rotate: '174deg',
+              top: '14px',
+              left: '-23px',
             }}
             initial={{ scale: 0, opacity: 0 }}
               animate={{
               scale: 1,
-              rotate: '207deg',
+              rotate: '174deg',
               opacity: 1,
             }}
             transition={{
@@ -36,12 +36,12 @@ export default function Home() {
             }}
           ></motion.div>
           <motion.div
-            className="absolute -bottom-10 -right-10 w-[300px] h-[300px] scale-200 bg-[#0205AD]"
+            className="absolute -bottom-[100px] -right-[57px] w-[180px] h-[180px] md:w-[300px] md:h-[300px] scale-200 bg-[#0205AD]"
             style={{
               borderRadius: radiusShape,
               rotate: '14deg',
-              bottom: '-300px',
-              right: '16px',
+              bottom: '-100px',
+              right: '-57px',
             }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{

@@ -20,7 +20,7 @@ export default function TitleGlass({ title } : TitleGlassProps) {
     };
 
     return(
-        <div className="w-full flex items-center justify-center gap-5 text-3xl md:text-[70px] font-yekan-bakh py-4 md:py-1 rounded-3xl md:rounded-[40px] bg-[#002FFF05]/10 border border-white/30 text-black backdrop-blur-[20px] font-bold">
+        <div className="w-full flex items-center justify-center gap-2 md:gap-5 text-2xl md:text-[70px] font-yekan-bakh py-4 md:py-1 rounded-3xl md:rounded-[40px] bg-[#002FFF05]/10 border border-white/30 text-black backdrop-blur-[20px] font-bold">
             <motion.span
                 style={{filter: "drop-shadow(0 0 30px rgba(0, 0, 0, 0.7))"}}
                 variants={wordVariants}

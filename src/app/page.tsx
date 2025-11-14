@@ -43,11 +43,13 @@ export default function Home() {
                 left: '-29px',
               })
             }}
-            initial={{ scale: 0, opacity: 0 }}
+            initial={{ scale: 0, opacity: 0, y: '-100px', x: '-100px' }}
             animate={{
               scale: 1,
               rotate: isMdOrLarger ? '207deg' : '174deg',
               opacity: 1,
+              y: '0',
+              x: '0'
             }}
             transition={{
               duration: 1.5,
@@ -69,11 +71,13 @@ export default function Home() {
                 right: '-70px',
               })
             }}
-            initial={{ scale: 0, opacity: 0 }}
+            initial={{ scale: 0, opacity: 0, y: '100px', x: '100px' }}
             animate={{
               scale: 1,
               rotate: '14deg',
               opacity: 1,
+              y: '0',
+              x: '0'
             }}
             transition={{
               duration: 1.5,

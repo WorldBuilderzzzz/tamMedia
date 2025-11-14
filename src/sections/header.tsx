@@ -46,7 +46,7 @@ const Header = () => {
 
     return(
         <motion.div
-            className="grid grid-rows-[1fr_auto] md:py-5 py-5 px-10 h-dvh"
+            className="grid grid-rows-[1fr_auto] md:py-5 py-5 px-3 h-dvh"
             initial="hidden"
             animate="visible"
             variants={containerVariants}
@@ -74,7 +74,7 @@ const Header = () => {
             <motion.div
                 className="flex flex-col items-center justify-center gap-4"
             >
-                <div className="flex items-center md:justify-around gap-14 md:gap-40 font-yekan-bakh md:text-xl text-[16px] bg-[#002FFF05] backdrop-blur-[20px] px-5 py-4 md:px-18 md:py-7 rounded-full">
+                <div className="flex items-center justify-around w-full md:w-fit md:gap-40 font-yekan-bakh text-xl bg-[#002FFF05] backdrop-blur-[20px] px-5 py-5 md:px-18 md:py-7 mb-10 md:mb-0 rounded-full">
                     <motion.button
                         onClick={() => scrollTo('tweets')}
                         className="focus:outline-none cursor-pointer"

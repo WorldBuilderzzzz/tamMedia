@@ -41,7 +41,7 @@ export default function Contact() {
             </motion.div>
             <motion.div
                 dir="rtl"
-                className="flex-1 text-justify font-medium font-yekan-bakh text-[23px] text-black/80 leading-10 md:leading-12 px-6"
+                className="flex-1 text-justify font-medium font-yekan-bakh text-base md:text-[23px] text-black/80 leading-10 md:leading-12 px-6"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}

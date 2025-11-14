@@ -28,7 +28,7 @@ export default function Tweets () {
             transition={{ duration: 0 }}
         >
             <motion.div
-                className="px-60"
+                className="md:px-60 px-6"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}

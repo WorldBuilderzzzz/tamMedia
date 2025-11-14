@@ -36,6 +36,7 @@ export default function Tweets () {
             >
                 <TitleGlass title="نتیجه همکاری با" />
             </motion.div>
+            {/* mobile tweets */}
             <motion.div
                 className="w-full h-full overflow-y-hidden md:hidden"
                 initial={{ opacity: 0, x: -100 }}
@@ -77,7 +78,7 @@ export default function Tweets () {
                                         />
                                         <div className="text-lg font-bold">{tweet.title}</div>
                                     </div>
-                                    <div className='text-[#7C7C7C] group-hover:text-black transition-colors font-vazir-matn text-sm'>@{tweet.instagram_id}</div>
+                                    <div dir="ltr" className='text-[#7C7C7C] group-hover:text-black transition-colors font-vazir-matn text-sm'>@{tweet.instagram_id}</div>
                                 </div>
                                 <div className="font-light">{tweet.description}</div>
                                 <div className="flex gap-2">
@@ -100,6 +101,7 @@ export default function Tweets () {
                     ))}
                 </Swiper>
             </motion.div>
+            {/* desktop tweets */}
             <motion.div
                 className="w-full hidden md:flex"
                 initial={{ opacity: 0, x: -100 }}

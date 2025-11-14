@@ -54,9 +54,9 @@ export default function Tweets () {
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
                 >   
                 {tweets.map((tweet, index) => (
-                        <SwiperSlide key={index} className="my-0">
+                        <SwiperSlide key={index}>
                             <motion.div
-                                className="bg-white/20 mx-6 pr-8 pl-15 py-4 flex flex-col justify-between rounded-[40px] border backdrop-blur-[20px] border-[#7C7C7C] hover:bg-white/10 group cursor-pointer transition-all duration-300"
+                                className="bg-white/20 mx-6 pr-3 pl-3 py-4 flex flex-col gap-4 justify-between rounded-[30px] border backdrop-blur-[20px] border-[#7C7C7C] hover:bg-white/10 group cursor-pointer transition-all duration-300"
                                 onClick={() => window.open(`https://www.instagram.com/${tweet.instagram_id}`, '_blank')}
                                 role="link"
                                 tabIndex={0}
@@ -76,9 +76,9 @@ export default function Tweets () {
                                             whileHover={{ scale: 1.1, rotate: 5 }}
                                             transition={{ duration: 0.3 }}
                                         />
-                                        <div className="text-lg font-bold">{tweet.title}</div>
+                                        <div className="text-base font-bold">{tweet.title}</div>
                                     </div>
-                                    <div dir="ltr" className='text-[#7C7C7C] group-hover:text-black transition-colors font-vazir-matn text-sm'>@{tweet.instagram_id}</div>
+                                    <div dir="ltr" className='text-[#7C7C7C] group-hover:text-black transition-colors font-vazir-matn text-xs'>@{tweet.instagram_id}</div>
                                 </div>
                                 <div className="font-light">{tweet.description}</div>
                                 <div className="flex gap-2">

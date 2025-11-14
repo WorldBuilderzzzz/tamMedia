@@ -37,7 +37,71 @@ export default function Tweets () {
                 <TitleGlass title="نتیجه همکاری با" />
             </motion.div>
             <motion.div
-                className="w-full flex "
+                className="w-full h-full overflow-y-hidden md:hidden"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            >
+                <Swiper
+                    className='h-full my-5'
+                    direction="vertical"
+                    modules={[Autoplay]}
+                    loop={true}
+                    slidesPerView={2}
+                    spaceBetween={0}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                >   
+                {tweets.map((tweet, index) => (
+                        <SwiperSlide key={index} className="my-0">
+                            <motion.div
+                                className="bg-white/20 mx-6 pr-8 pl-15 py-4 flex flex-col justify-between rounded-[40px] border backdrop-blur-[20px] border-[#7C7C7C] hover:bg-white/10 group cursor-pointer transition-all duration-300"
+                                onClick={() => window.open(`https://www.instagram.com/${tweet.instagram_id}`, '_blank')}
+                                role="link"
+                                tabIndex={0}
+                                onKeyDown={(event) => {
+                                    if (event.key === 'Enter' || event.key === ' ') {
+                                        event.preventDefault();
+                                        window.open(`https://www.instagram.com/${tweet.instagram_id}`, '_blank');
+                                    }
+                                }}
+                            >
+                                <div className="flex items-center justify-between">
+                                    <div className="flex gap-2 items-center">
+                                        <motion.img
+                                            className='w-13 h-13 object-cover rounded-full group-hover:scale-110 transition-all duration-300'
+                                            src={tweet.image === 'Profile' ? `/images/${tweet.image}.png` : `/images/${tweet.image}.JPG`}
+                                            alt={tweet.title}
+                                            whileHover={{ scale: 1.1, rotate: 5 }}
+                                            transition={{ duration: 0.3 }}
+                                        />
+                                        <div className="text-lg font-bold">{tweet.title}</div>
+                                    </div>
+                                    <div className='text-[#7C7C7C] group-hover:text-black transition-colors font-vazir-matn text-sm'>@{tweet.instagram_id}</div>
+                                </div>
+                                <div className="font-light">{tweet.description}</div>
+                                <div className="flex gap-2">
+                                    {tweet.badges && tweet.badges.map((badge, index) => (
+                                        <a
+                                            key={index}
+                                            href={badge.link}
+                                            target='_blank'
+                                            rel="noreferrer"
+                                            dir='ltr'
+                                            className="border border-[#D13926] even:border-[#0205B6] bg-[#D1392680] even:bg-[#0205B680] rounded-full text-xs px-5 py-2 hover:scale-110 shadow hover:shadow-lg transition-all duration-300"
+                                            onClick={(event) => event.stopPropagation()}
+                                        >
+                                            {badge.title}
+                                        </a>
+                                    ))}
+                                </div>
+                            </motion.div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </motion.div>
+            <motion.div
+                className="w-full hidden md:flex"
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.3 }}

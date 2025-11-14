@@ -51,24 +51,30 @@ const Header = () => {
             animate="visible"
             variants={containerVariants}
         >
-            <div className="flex flex-col md:gap-10 gap-5 items-center justify-center">
+            <div className="flex flex-col gap-7 md:gap-10 items-center justify-center">
                 <motion.img
                     src="/images/logo.svg"
                     alt="logo"
-                    className="px-4 md:px-0 w-[400px] md:w-[550px]"
+                    className="px-4 md:px-0 w-[300px] md:w-[550px]"
                     variants={itemVariants}
                 />
                 <motion.img
                     src="/images/tamMedia.svg"
                     alt="tamMedia"
-                    className="px-4 md:px-0 w-[250px] md:w-[350px] scale-150"
+                    className="hidden md:block px-0 w-[350px] scale-150"
+                    variants={itemVariants}
+                />
+                <motion.img
+                    src="/images/tamMediaMobile.svg"
+                    alt="tamMedia"
+                    className="md:hidden px-0 w-[150px] scale-150"
                     variants={itemVariants}
                 />
             </div>
             <motion.div
                 className="flex flex-col items-center justify-center gap-4"
             >
-                <div className="flex items-center md:justify-around gap-40 font-yekan-bakh md:text-xl text-[16px] bg-[#002FFF05] backdrop-blur-[20px] px-18 py-7 rounded-full">
+                <div className="flex items-center md:justify-around gap-14 md:gap-40 font-yekan-bakh md:text-xl text-[16px] bg-[#002FFF05] backdrop-blur-[20px] px-5 py-4 md:px-18 md:py-7 rounded-full">
                     <motion.button
                         onClick={() => scrollTo('tweets')}
                         className="focus:outline-none cursor-pointer"

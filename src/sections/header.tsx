@@ -55,19 +55,19 @@ const Header = () => {
                 <motion.img
                     src="/images/logo.svg"
                     alt="logo"
-                    className="px-4 md:px-0 w-[300px] md:w-[550px]"
+                    className="px-4 md:px-0 w-[300px] md:w-[550px] select-none"
                     variants={itemVariants}
                 />
                 <motion.img
                     src="/images/tamMedia.svg"
                     alt="tamMedia"
-                    className="hidden md:block px-0 w-[350px] scale-150"
+                    className="hidden md:block px-0 w-[350px] scale-150 select-none"
                     variants={itemVariants}
                 />
                 <motion.img
                     src="/images/tamMediaMobile.svg"
                     alt="tamMedia"
-                    className="md:hidden px-0 w-[150px] scale-150"
+                    className="md:hidden px-0 w-[150px] scale-150 select-none"
                     variants={itemVariants}
                 />
             </div>

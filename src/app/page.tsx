@@ -16,12 +16,12 @@ export default function Home() {
             className="absolute top-0 left-0 w-full h-full opacity-50"
           />
           <motion.div
-            className="absolute top-[14px] -left-[23px] w-[118px] h-[100px] md:w-[300px] md:h-[300px] scale-200 bg-[#DF3D28]"
+            className="absolute w-[148px] h-[100px] md:w-[300px] md:h-[300px] scale-200 bg-[#DF3D28]"
             style={{
               borderRadius: radiusShape,
               rotate: '174deg',
-              top: '14px',
-              left: '-23px',
+              top: '-5px',
+              left: '-29px',
             }}
             initial={{ scale: 0, opacity: 0 }}
               animate={{

@@ -3,10 +3,24 @@ import Header from "@/sections/header";
 import Contact from "@/sections/contact";
 import Tweets from "@/sections/tweets";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const radiusShape = '60% 40% 0% 100% / 52% 100% 0% 48%'
 
 export default function Home() {
+  const [isMdOrLarger, setIsMdOrLarger] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMdOrLarger(window.innerWidth >= 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
   return (
     <div className="h-dvh w-dvw relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full inset-0 bg-black/10">
@@ -16,18 +30,26 @@ export default function Home() {
             className="absolute top-0 left-0 w-full h-full opacity-50"
           />
           <motion.div
-            className="absolute -top-10 -left-10 w-[300px] h-[300px] scale-200 bg-[#DF3D28]"
+            className="absolute w-[148px] h-[100px] md:w-[300px] md:h-[300px] scale-200 bg-[#DF3D28]"
             style={{
               borderRadius: radiusShape,
-              rotate: '207',
-              top: '-300px',
-              left: '-40px',
+              ...(isMdOrLarger ? {
+                rotate: '207deg',
+                top: '-300px',
+                left: '-40px',
+              } : {
+                rotate: '174deg',
+                top: '-5px',
+                left: '-29px',
+              })
             }}
-            initial={{ scale: 0, opacity: 0 }}
-              animate={{
+            initial={{ scale: 0, opacity: 0, y: '-100px', x: '-100px' }}
+            animate={{
               scale: 1,
-              rotate: '207deg',
+              rotate: isMdOrLarger ? '207deg' : '174deg',
               opacity: 1,
+              y: '0',
+              x: '0'
             }}
             transition={{
               duration: 1.5,
@@ -36,18 +58,26 @@ export default function Home() {
             }}
           ></motion.div>
           <motion.div
-            className="absolute -bottom-10 -right-10 w-[300px] h-[300px] scale-200 bg-[#0205AD]"
+            className="absolute -bottom-[120px] -right-[70px] w-[180px] h-[180px] md:w-[300px] md:h-[300px] scale-200 bg-[#0205AD]"
             style={{
               borderRadius: radiusShape,
-              rotate: '14deg',
-              bottom: '-300px',
-              right: '16px',
+              ...(isMdOrLarger ? {
+                rotate: '14deg',
+                bottom: '-300px',
+                right: '16px',
+              } : {
+                rotate: '14deg',
+                bottom: '-120px',
+                right: '-70px',
+              })
             }}
-            initial={{ scale: 0, opacity: 0 }}
+            initial={{ scale: 0, opacity: 0, y: '100px', x: '100px' }}
             animate={{
               scale: 1,
               rotate: '14deg',
               opacity: 1,
+              y: '0',
+              x: '0'
             }}
             transition={{
               duration: 1.5,

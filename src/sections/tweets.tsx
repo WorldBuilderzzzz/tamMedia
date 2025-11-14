@@ -80,7 +80,7 @@ export default function Tweets () {
                                     </div>
                                     <div dir="ltr" className='text-[#7C7C7C] group-hover:text-black transition-colors font-vazir-matn text-xs'>@{tweet.instagram_id}</div>
                                 </div>
-                                <div className="font-light">{tweet.description}</div>
+                                <div className="font-light text-sm">{tweet.description}</div>
                                 <div className="flex gap-2">
                                     {tweet.badges && tweet.badges.map((badge, index) => (
                                         <a

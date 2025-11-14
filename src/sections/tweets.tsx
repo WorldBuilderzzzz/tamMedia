@@ -167,7 +167,7 @@ export default function Tweets () {
             </motion.div>
             <div
                 onClick={() => scrollTo('contact')}
-                className="w-10 h-10 mx-auto rotate-270 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer"
+                className="w-10 h-10 -mb-7 mx-auto rotate-270 text-4xl font-bold text-black font-anonymous-pro opacity-80 cursor-pointer"
             >
                 {'>'}
             </div>

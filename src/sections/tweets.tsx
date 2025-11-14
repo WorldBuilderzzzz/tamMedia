@@ -39,10 +39,10 @@ export default function Tweets () {
             {/* mobile tweets */}
             <motion.div
                 className="w-full h-full overflow-y-hidden md:hidden"
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
                 <Swiper
                     className='h-full my-5'

@@ -74,7 +74,7 @@ const Header = () => {
             <motion.div
                 className="flex flex-col items-center justify-center gap-4"
             >
-                <div className="flex items-center justify-around w-full md:w-fit md:gap-40 font-yekan-bakh text-xl bg-[#002FFF05] backdrop-blur-[20px] px-5 py-5 md:px-18 md:py-7 mb-6 md:mb-0 rounded-full">
+                <div className="flex items-center justify-around w-full md:w-fit md:gap-40 font-yekan-bakh text-lg md:text-xl bg-[#002FFF05] backdrop-blur-[20px] px-5 py-5 md:px-18 md:py-7 mb-6 md:mb-0 rounded-full">
                     <motion.button
                         onClick={() => scrollTo('tweets')}
                         className="focus:outline-none cursor-pointer"

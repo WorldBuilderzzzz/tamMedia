@@ -39,7 +39,7 @@ export default function Home() {
                 left: '-40px',
               } : {
                 rotate: '174deg',
-                top: '-5px',
+                top: '-70px',
                 left: '-29px',
               })
             }}
@@ -67,7 +67,7 @@ export default function Home() {
                 right: '16px',
               } : {
                 rotate: '14deg',
-                bottom: '-120px',
+                bottom: '-160px',
                 right: '-70px',
               })
             }}

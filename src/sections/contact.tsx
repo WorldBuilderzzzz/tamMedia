@@ -25,7 +25,7 @@ export default function Contact() {
 
     return(
         <motion.div
-            className="h-dvh py-10 px-6 md:px-80 flex flex-col justify-betwee gap-10 md:gap-18"
+            className="h-dvh py-10 px-6 md:px-80 grid grid-rows-[auto_1fr_auto] gap-10 md:gap-18"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}

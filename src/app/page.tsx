@@ -67,7 +67,7 @@ export default function Home() {
                 right: '16px',
               } : {
                 rotate: '14deg',
-                bottom: '-140px',
+                bottom: '-160px',
                 right: '-70px',
               })
             }}

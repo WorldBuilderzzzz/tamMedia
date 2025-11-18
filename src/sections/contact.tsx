@@ -25,7 +25,7 @@ export default function Contact() {
 
     return(
         <motion.div
-            className="h-dvh py-10 px-6 md:px-80 grid grid-rows-[auto_1fr_auto] gap-10 md:gap-18"
+            className="h-dvh py-10 px-6 md:px-80 grid grid-rows-[auto_1fr_auto] gap-5 md:gap-18 relative"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -50,6 +50,7 @@ export default function Contact() {
                 تام‌مدیا فقط یک آژانس بازاریابی و برندینــگ نیست؛ بلکه یک نیروی خــــــلــــاق است که بـــــرنـــدها را به‌عنوان موجــودیت‌هایی زنده و پویا می‌بیند. ما روح بـــــرنـــــــد شما را کشف کرده و آن را از طـــریق تصاویر بصـــــری جذاب، استراتـژی‌های هوشمندانه و کمپین‌های تأثیرگذار به زندگـــــی می‌آوریم. با الهام از داســـــتـــــان‌هـــــا و آرزوهــــای شما، مـــــا تجـــــربه‌هایی خـــلـــــق می‌کنیم که دیده می‌شوند، احساس می‌شوند و فراموش‌نشدنی هستند.
             </motion.div>
             <motion.div
+                // className="absolute md:relative bottom-10 md:bottom-0 left -1/2 md:left-none -translate-x-1/2 w-[90%] md:w-full flex items-center justify-between font-yekan-bakh text-base md:text-xl border border-white/30 bg-[#002FFF05] backdrop-blur-[30px] px-4 md:px-18 py-7 mb-4 md:mb-0 rounded-full"
                 className="w-full flex items-center justify-between font-yekan-bakh text-base md:text-xl border border-white/30 bg-[#002FFF05] backdrop-blur-[30px] px-4 md:px-18 py-7 mb-4 md:mb-0 rounded-full"
                 initial={{ opacity: 0, y: 50, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}

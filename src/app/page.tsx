@@ -63,8 +63,8 @@ export default function Home() {
               borderRadius: radiusShape,
               ...(isMdOrLarger ? {
                 rotate: '14deg',
-                bottom: '-300px',
-                right: '16px',
+                bottom: '-240px',
+                right: '26px',
               } : {
                 rotate: '14deg',
                 bottom: '-160px',

@@ -91,11 +91,11 @@ export default function Home() {
               <div id="header" className="snap-start">
                 <Header />
               </div>
-              <div id="tweets" className="snap-start">
-                <Tweets />
-              </div>
               <div id="services" className="snap-start">
                 <Services />
+              </div>
+              <div id="tweets" className="snap-start">
+                <Tweets />
               </div>
               <div id="contact" className="snap-start">
                 <Contact />

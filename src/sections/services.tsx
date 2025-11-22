@@ -5,20 +5,21 @@ import { useState } from "react";
 
 type serviceType = 'service' | 'guide' | 'consultation'
 
+const serviceMap: Record<serviceType, string> = {
+    "service": "خـــدمـــــــات",
+    "guide": "آمـــــــوزش",
+    "consultation": "مـــــشــــاوره"
+}
+
+const scrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 export default function Services() {
     const [service, setService] = useState<serviceType | null>(null)
 
-    const serviceMap: Record<serviceType, string> = {
-        "service": "خـــدمـــــــات",
-        "guide": "آمـــــــوزش",
-        "consultation": "مـــــشــــاوره"
-    }
     
-    const scrollTo = (id: string) => {
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
     return(
         <motion.div
             className="h-dvh py-10 px-6 md:px-20 flex flex-col justify-between gap-10 relative"

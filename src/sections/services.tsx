@@ -63,19 +63,19 @@ export default function Services() {
                 <div className="w-full h-full bg-[#193FE905] backdrop-blur-[20px] rounded-3xl py-5 px-14 font-yekan-bakh">
                     {service == null ? (
                         <div className="flex flex-col gap-4 justify-around items-center h-full">
-                            <div className="flex gap-5 text-4xl w-full">
+                            <div className="flex gap-5 text-4xl w-full hover:scale-105 duration-100">
                                 <div className="flex-1 text-left">
                                     <Plus className="mr-auto"/>
                                 </div>
                                 <span className="flex-1 text-right font-semibold cursor-pointer" onClick={() => setService('service')}>خـــدمـــــــات </span>
                             </div>
-                            <div className="flex gap-5 text-4xl w-full">
+                            <div className="flex gap-5 text-4xl w-full hover:scale-105 duration-100">
                                 <div className="flex-1 text-left">
                                     <Plus className="mr-auto text-[#0205B6]"/>
                                 </div>
                                 <span className="flex-1 text-right font-semibold cursor-pointer" onClick={() => setService('guide')}>آمـــــــوزش </span>
                             </div>
-                            <div className="flex gap-5 text-4xl w-full">
+                            <div className="flex gap-5 text-4xl w-full hover:scale-105 duration-100">
                                 <div className="flex-1 text-left">
                                     <Plus className="mr-auto text-[#DF3D28]"/>
                                 </div>
@@ -86,7 +86,7 @@ export default function Services() {
                         <div className="flex flex-col h-full">
                             <div className="flex justify-between items-center">
                                 <div className="font-semibold text-[45px]">{serviceMap[service]}</div>
-                                <div className="flex items-center gap-4" onClick={() => setService(null)}>
+                                <div className="flex items-center gap-4 hover:scale-105 transition-all" onClick={() => setService(null)}>
                                     <span className="text-[25px] cursor-pointer"> سرویس ها</span>
                                     <img src="/images/arrow.svg" alt="arrow icon" className="w-8 cursor-pointer" />
                                 </div>

@@ -30,7 +30,7 @@ export default function Tweets () {
             instagram_id: "Mehravidclinic",
             badges:[
                 {title:'کمپین یلدا', link:'https://www.instagram.com/reel/DDpT4SMuZ1v/?igsh=OHVkd2RicXV0eThn'},
-                {title:'کمپین سال نو', link:'https://www.instagram.com/reel/DDl_Z25oqfK/?igsh=MTV4bWx3ZmJkMzNq'},
+                {title:'کمپین سال نو', link:'https://www.instagram.com/reel/DHa4Yk1tJJZ/?igsh=eHZya3NtZngzOXI2'},
                 {title:'پادکست دندانپرشکی', link:'https://www.instagram.com/reel/DQAKpXLDcXH/?igsh=YjBwdTJjb3hvdGtm'}
             ], 
             image: "mehravid", 
@@ -54,7 +54,7 @@ export default function Tweets () {
             instagram_id: "Mehravidclinic",
             badges:[
                 {title:'کمپین یلدا', link:'https://www.instagram.com/reel/DDpT4SMuZ1v/?igsh=OHVkd2RicXV0eThn'},
-                {title:'کمپین سال نو', link:'https://www.instagram.com/reel/DDl_Z25oqfK/?igsh=MTV4bWx3ZmJkMzNq'},
+                {title:'کمپین سال نو', link:'https://www.instagram.com/reel/DHa4Yk1tJJZ/?igsh=eHZya3NtZngzOXI2'},
                 {title:'پادکست دندانپرشکی', link:'https://www.instagram.com/reel/DQAKpXLDcXH/?igsh=YjBwdTJjb3hvdGtm'}
             ], 
             image: "mehravid", 

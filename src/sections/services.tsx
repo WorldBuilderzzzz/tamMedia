@@ -1,6 +1,6 @@
 import TitleGlass from "@/components/titleGlass";
 import { ArrowLeft, Plus } from 'lucide-react';
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 type serviceType = 'service' | 'guide' | 'consultation'
@@ -61,46 +61,83 @@ export default function Services() {
                     <TitleGlass title="خدمات ما" />
                 </div>
                 <div className="w-full h-full bg-[#193FE905] backdrop-blur-[20px] rounded-3xl py-5 px-14 font-yekan-bakh">
-                    {service == null ? (
-                        <div className="flex flex-col gap-4 justify-around items-center h-full">
-                            <div className="flex gap-5 text-4xl w-full hover:scale-105 duration-100">
-                                <div className="flex-1 text-left">
-                                    <Plus className="mr-auto"/>
-                                </div>
-                                <span className="flex-1 text-right font-semibold cursor-pointer" onClick={() => setService('service')}>خـــدمـــــــات </span>
-                            </div>
-                            <div className="flex gap-5 text-4xl w-full hover:scale-105 duration-100">
-                                <div className="flex-1 text-left">
-                                    <Plus className="mr-auto text-[#0205B6]"/>
-                                </div>
-                                <span className="flex-1 text-right font-semibold cursor-pointer" onClick={() => setService('guide')}>آمـــــــوزش </span>
-                            </div>
-                            <div className="flex gap-5 text-4xl w-full hover:scale-105 duration-100">
-                                <div className="flex-1 text-left">
-                                    <Plus className="mr-auto text-[#DF3D28]"/>
-                                </div>
-                                <span className="flex-1 text-right font-semibold cursor-pointer" onClick={() => setService('consultation')}>مـــــشــــاوره </span>
-                            </div>
-                        </div>
-                    ) : (
-                        <div className="flex flex-col h-full">
-                            <div className="flex justify-between items-center">
-                                <div className="font-semibold text-[45px]">{serviceMap[service]}</div>
-                                <div className="flex items-center gap-4 hover:scale-105 transition-all" onClick={() => setService(null)}>
-                                    <span className="text-[25px] cursor-pointer"> سرویس ها</span>
-                                    <img src="/images/arrow.svg" alt="arrow icon" className="w-8 cursor-pointer" />
-                                </div>
-                            </div>
-                            <div className="h-full mt-10">
-                                {servicesItems[service].map((item, index) => (
-                                    <div key={index} className="flex items-center gap-2 text-2xl opacity-75 font-medium leading-10">
-                                        <span className="w-2 h-2 bg-black rounded-full inline-block"></span>
-                                        <span>{item}</span>
+                    <AnimatePresence mode="wait">
+                        {service == null ? (
+                            <motion.div 
+                                key="services-list"
+                                className="flex flex-col gap-4 justify-around items-center h-full"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                            >
+                                <div className="flex gap-5 text-4xl w-full">
+                                    <div className="flex-1 text-left">
+                                        <Plus className="mr-auto"/>
                                     </div>
-                                ))}
-                            </div>
-                        </div>
-                    )}
+                                    <motion.span 
+                                        layoutId="service-title"
+                                        className="flex-1 hover:text-black/70 transition-colors text-right font-semibold cursor-pointer" 
+                                        onClick={() => setService('service')}
+                                    >
+                                        خـــدمـــــــات
+                                    </motion.span>
+                                </div>
+                                <div className="flex gap-5 text-4xl w-full">
+                                    <div className="flex-1 text-left">
+                                        <Plus className="mr-auto text-[#0205B6]"/>
+                                    </div>
+                                    <motion.span 
+                                        layoutId="guide-title"
+                                        className="flex-1 hover:text-black/70 transition-colors text-right font-semibold cursor-pointer" 
+                                        onClick={() => setService('guide')}
+                                    >
+                                        آمـــــــوزش
+                                    </motion.span>
+                                </div>
+                                <div className="flex gap-5 text-4xl w-full">
+                                    <div className="flex-1 text-left">
+                                        <Plus className="mr-auto text-[#DF3D28]"/>
+                                    </div>
+                                    <motion.span 
+                                        layoutId="consultation-title"
+                                        className="flex-1 hover:text-black/70 transition-colors text-right font-semibold cursor-pointer" 
+                                        onClick={() => setService('consultation')}
+                                    >
+                                        مـــــشــــاوره
+                                    </motion.span>
+                                </div>
+                            </motion.div>
+                        ) : (
+                            <motion.div 
+                                key="service-detail"
+                                className="flex flex-col h-full"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                            >
+                                <div className="flex justify-between items-center">
+                                    <motion.div 
+                                        layoutId={`${service}-title`}
+                                        className="font-semibold text-[45px]"
+                                    >
+                                        {serviceMap[service]}
+                                    </motion.div>
+                                    <div className="flex items-center gap-4 hover:text-black/70 transition-colors cursor-pointer" onClick={() => setService(null)}>
+                                        <span className="text-[25px] cursor-pointer"> سرویس ها</span>
+                                        <img src="/images/arrow.svg" alt="arrow icon" className="w-8 cursor-pointer" />
+                                    </div>
+                                </div>
+                                <div className="h-full mt-10">
+                                    {servicesItems[service].map((item, index) => (
+                                        <div key={index} className="flex items-center gap-2 text-2xl opacity-75 font-medium leading-10">
+                                            <span className="w-2 h-2 bg-black rounded-full inline-block"></span>
+                                            <span>{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </motion.div>
             <div

@@ -3,11 +3,30 @@ import { motion, Variants } from "framer-motion";
 import TitleGlass from "@/components/titleGlass";
 
 export default function Contact() {
+    const phoneNumber = "+98 912 659 2060";
+    const phoneNumberClean = phoneNumber.replace(/[^0-9]/g, '');
     const contactItems = [
-        { name: "اینستاگرام", hoverColor: "#0205AD" },
-        { name: "تلگرام", hoverColor: "#DF3D28" },
-        { name: "ایمیل", hoverColor: "#0205AD" },
-        { name: "تماس", hoverColor: "#DF3D28" }
+        { 
+            name: "اینستاگرام", 
+            hoverColor: "#e1306c",
+            link: "https://www.instagram.com/tammediaclub?igsh=MWlmeTZqc29xdHkzag=="
+        },
+        { 
+            name: "تلگرام", 
+            hoverColor: "#0088CC",
+            link: "https://t.me/tammediaclub"
+        },
+        { 
+            name: "واتساپ", 
+            hoverColor: "#075e54",
+            link: `whatsapp://send?abid=${phoneNumberClean}&text=test`
+        },
+        { 
+            name: "تماس", 
+            hoverColor: "#0205AD",
+            link: `tel:${phoneNumber}`,
+            isTel: true
+        }
     ];
 
     const buttonVariants: Variants = {
@@ -58,8 +77,10 @@ export default function Contact() {
                 transition={{ duration: 0.6, delay: 0.3, ease: [0.34, 1.56, 0.64, 1] }}
             >
                 {contactItems.map((item, index) => (
-                    <motion.div
+                    <motion.a
                         key={item.name}
+                        href={item.link}
+                        {...(item.isTel ? {} : { target: "_blank", rel: "noopener noreferrer" })}
                         className="cursor-pointer"
                         variants={buttonVariants}
                         initial="hidden"
@@ -70,7 +91,7 @@ export default function Contact() {
                         whileTap={{ scale: 0.95 }}
                     >
                         {item.name}
-                    </motion.div>
+                    </motion.a>
                 ))}
             </motion.div>
         </motion.div>

@@ -29,9 +29,9 @@ export default function Tweets () {
             title: "مهراوید کلینیک", 
             instagram_id: "Mehravidclinic",
             badges:[
-                {title:'کمپین یلدا', link:'https://www.instagram.com/reel/DDpT4SMuZ1v/?igsh=OHVkd2RicXV0eThn'},
-                {title:'کمپین سال نو', link:'https://www.instagram.com/reel/DHa4Yk1tJJZ/?igsh=eHZya3NtZngzOXI2'},
-                {title:'پادکست دندانپرشکی', link:'https://www.instagram.com/reel/DQAKpXLDcXH/?igsh=YjBwdTJjb3hvdGtm'}
+                {title:'کمپین یلدا', link:'https://www.instagram.com/reel/DDpT4SMuZ1v/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=='},
+                {title:'کمپین سال نو', link:'https://www.instagram.com/reel/DHa4Yk1tJJZ/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=='},
+                {title:'پادکست دندانپرشکی', link:'https://www.instagram.com/reel/DQAKpXLDcXH/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=='}
             ], 
             image: "mehravid", 
             description: "نزدیک به دو ساله با بچه‌های گروه مهراوید کلینیک پزشکی همکاری می‌کنیم؛ بچه‌های بسیار منظم، مرتب و مؤدبی هستن و بارز‌ترین شاخصه‌شون خلاقیت و ایده‌های نو هستش."
@@ -53,9 +53,9 @@ export default function Tweets () {
             title: "مهراوید کلینیک", 
             instagram_id: "Mehravidclinic",
             badges:[
-                {title:'کمپین یلدا', link:'https://www.instagram.com/reel/DDpT4SMuZ1v/?igsh=OHVkd2RicXV0eThn'},
-                {title:'کمپین سال نو', link:'https://www.instagram.com/reel/DHa4Yk1tJJZ/?igsh=eHZya3NtZngzOXI2'},
-                {title:'پادکست دندانپرشکی', link:'https://www.instagram.com/reel/DQAKpXLDcXH/?igsh=YjBwdTJjb3hvdGtm'}
+                {title:'کمپین یلدا', link:'https://www.instagram.com/reel/DDpT4SMuZ1v/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=='},
+                {title:'کمپین سال نو', link:'https://www.instagram.com/reel/DHa4Yk1tJJZ/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=='},
+                {title:'پادکست دندانپرشکی', link:'https://www.instagram.com/reel/DQAKpXLDcXH/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=='}
             ], 
             image: "mehravid", 
             description: "نزدیک به دو ساله با بچه‌های گروه مهراوید کلینیک پزشکی همکاری می‌کنیم؛ بچه‌های بسیار منظم، مرتب و مؤدبی هستن و بارز‌ترین شاخصه‌شون خلاقیت و ایده‌های نو هستش."

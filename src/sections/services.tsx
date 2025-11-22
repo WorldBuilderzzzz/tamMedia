@@ -86,9 +86,9 @@ export default function Services() {
                         <div className="flex flex-col h-full">
                             <div className="flex justify-between items-center">
                                 <div className="font-semibold text-[45px]">{serviceMap[service]}</div>
-                                <div className="flex items-center gap-4">
-                                    <span className="text-[25px] cursor-pointer" onClick={() => setService(null)}> سرویس ها</span>
-                                    <img src="/images/arrow.svg" alt="arrow icon" className="w-8" />
+                                <div className="flex items-center gap-4" onClick={() => setService(null)}>
+                                    <span className="text-[25px] cursor-pointer"> سرویس ها</span>
+                                    <img src="/images/arrow.svg" alt="arrow icon" className="w-8 cursor-pointer" />
                                 </div>
                             </div>
                             <div className="h-full mt-10">

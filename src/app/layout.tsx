@@ -68,6 +68,9 @@ export const metadata: Metadata = {
   },
   category: "media",
   classification: "Business",
+  verification: {
+    google: "74Ap5EHEgm-qia6m8xTp9BsaIEORXkWlOVD_2S-XhQA",
+  },
   other: {
     "theme-color": "#0205AD",
     "color-scheme": "light",

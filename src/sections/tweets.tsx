@@ -48,6 +48,18 @@ export default function Tweets () {
             ], 
             description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنم گاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."
         },
+        {
+            id: "4", 
+            title: "مهراوید کلینیک", 
+            instagram_id: "Mehravidclinic",
+            badges:[
+                {title:'کمپین یلدا', link:'https://www.instagram.com/reel/DDpT4SMuZ1v/?igsh=OHVkd2RicXV0eThn'},
+                {title:'کمپین سال نو', link:'https://www.instagram.com/reel/DDl_Z25oqfK/?igsh=MTV4bWx3ZmJkMzNq'},
+                {title:'پادکست دندانپرشکی', link:'https://www.instagram.com/reel/DQAKpXLDcXH/?igsh=YjBwdTJjb3hvdGtm'}
+            ], 
+            image: "mehravid", 
+            description: "نزدیک به دو ساله با بچه‌های گروه مهراوید کلینیک پزشکی همکاری می‌کنیم؛ بچه‌های بسیار منظم، مرتب و مؤدبی هستن و بارز‌ترین شاخصه‌شون خلاقیت و ایده‌های نو هستش."
+        },
     ]
 
     return(

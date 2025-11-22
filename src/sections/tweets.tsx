@@ -36,7 +36,18 @@ export default function Tweets () {
             image: "mehravid", 
             description: "نزدیک به دو ساله با بچه‌های گروه مهراوید کلینیک پزشکی همکاری می‌کنیم؛ بچه‌های بسیار منظم، مرتب و مؤدبی هستن و بارز‌ترین شاخصه‌شون خلاقیت و ایده‌های نو هستش."
         },
-        // {id: "4", title: "خانم تام‌مدیا کلاب", instagram_id: "tamMediaClub", image: "Profile", description: "همکاری با تام مدیا در پروژه تولید محتوا تجربه‌ای بسیار حرفه‌ای و رضایت‌بخش بود. تیم خلاق و متعهد تام مدیا با درک دقیق نیازهای ما، محتوایی باکیفیت و اثرگذار تولید کرد که کاملاً با اهداف پروژه هم‌راستا بود. مدیریت قوی، تحویل به‌موقع و توجه به جزئیات از ویژگی‌های برجسته این همکاری بود. بدون شک، تام مدیا انتخابی مطمئن برای پروژه‌های آینده ماست!"},
+        {
+            id: "3",
+            title: "سوگند نتاج",
+            instagram_id: "SOGAND_NATAJ_",
+            image: "sogand", 
+            badges:[
+                {title:'+8m',link:'https://www.instagram.com/reel/DN0MqaL2Jjz/?igsh=MWtuNjRmcDJza2VvZw=='},
+                {title:'+3.5m', link:'https://www.instagram.com/reel/DN-1cYfjRMR/?igsh=bHN0M282ejl0MTh6'},
+                {title:'+1.7m', link:'https://www.instagram.com/reel/DPBK1vRDSMA/?igsh=MWIzMW8wc3dzMnM4Nw=='}
+            ], 
+            description: "بچه‌های خیلی خلاقی‌ هستن؛ خوشحالم که دارم باهاشون همکاری میکنم گاهی اوقات بوده که من هیچ سناریویی نداشتم، بهشون فقط ایده می‌دادم و نتیجه‌های خیلی خوبی برام درست میکردن."
+        },
     ]
 
     return(

@@ -11,6 +11,28 @@ const serviceMap: Record<serviceType, string> = {
     "consultation": "مـــــشــــاوره"
 }
 
+const servicesItems: Record<serviceType, string[]> = {
+    "service": [
+        "خدمات سوشال مدیا",
+        "خدمات طراحی و پیاده‌سازی وب‌سایت",
+        "خدمات فیلمبرداری و تدوین",
+        "خدمات گرافیکی",
+        "خدمات عکاسی",
+        "پکیج‌های تولید محتوا اینستاگرام",
+    ],
+    "guide": [
+        "برگزاری کلاس‌های آنلاین با طراحی اختصاصی برای شما",
+    ],
+    "consultation": [
+        "مشاوره رشد در فضای آنلاین",
+        "طراحی استراتژی محتوایی",
+        "ایده‌پردازی کمپین‌های مناسبتی و تبلیغاتی",
+        "تحلیل رقبا و بازار هدف در اینستاگرام",
+        "مشاوره برندینگ شخصی",
+        "طراحی تقویم محتوایی",
+    ]
+}
+
 const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -38,7 +60,7 @@ export default function Services() {
                 <div className="px-6 md:px-80">
                     <TitleGlass title="خدمات ما" />
                 </div>
-                <div className="w-full h-full bg-[#193FE905] backdrop-blur-[20px] rounded-3xl p-5 font-yekan-bakh">
+                <div className="w-full h-full bg-[#193FE905] backdrop-blur-[20px] rounded-3xl py-5 px-14 font-yekan-bakh">
                     {service == null ? (
                         <div className="flex flex-col gap-4 justify-around items-center h-full">
                             <div className="flex gap-5 text-4xl w-full">
@@ -61,7 +83,7 @@ export default function Services() {
                             </div>
                         </div>
                     ) : (
-                        <div className="">
+                        <div className="flex flex-col h-full">
                             <div className="flex justify-between items-center">
                                 <div className="font-semibold text-[45px]">{serviceMap[service]}</div>
                                 <div className="flex items-center gap-4">
@@ -69,8 +91,13 @@ export default function Services() {
                                     <img src="/images/arrow.svg" alt="arrow icon" className="w-8" />
                                 </div>
                             </div>
-                            <div>
-                                
+                            <div className="h-full mt-10">
+                                {servicesItems[service].map((item, index) => (
+                                    <div key={index} className="flex items-center gap-2 text-2xl opacity-75 font-medium leading-10">
+                                        <span className="w-2 h-2 bg-black rounded-full inline-block"></span>
+                                        <span>{item}</span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     )}

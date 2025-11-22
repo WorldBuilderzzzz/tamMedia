@@ -132,7 +132,7 @@ export default function Tweets () {
                                             target='_blank'
                                             rel="noreferrer"
                                             dir='ltr'
-                                            className="border border-[#D13926] even:border-[#0205B6] bg-[#D1392680] even:bg-[#0205B680] rounded-full text-xs px-5 py-2 hover:scale-110 shadow hover:shadow-lg transition-all duration-300"
+                                            className="border text-nowrap border-[#D13926] even:border-[#0205B6] bg-[#D1392680] even:bg-[#0205B680] rounded-full text-xs px-5 py-2 hover:scale-110 shadow hover:shadow-lg transition-all duration-300"
                                             onClick={(event) => event.stopPropagation()}
                                         >
                                             {badge.title}

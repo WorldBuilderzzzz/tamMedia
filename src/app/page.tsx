@@ -4,6 +4,7 @@ import Contact from "@/sections/contact";
 import Tweets from "@/sections/tweets";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import Services from "@/sections/services";
 
 const radiusShape = '60% 40% 0% 100% / 52% 100% 0% 48%'
 
@@ -92,6 +93,9 @@ export default function Home() {
               </div>
               <div id="tweets" className="snap-start">
                 <Tweets />
+              </div>
+              <div id="services" className="snap-start">
+                <Services />
               </div>
               <div id="contact" className="snap-start">
                 <Contact />

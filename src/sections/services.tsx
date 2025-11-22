@@ -60,7 +60,7 @@ export default function Services() {
                 <div className="px-6 md:px-50">
                     <TitleGlass title="سرویس های" />
                 </div>
-                <div className="w-full h-full bg-[#193FE905] backdrop-blur-[20px] rounded-[80px] md:rounded-3xl py-5 px-2 md:px-14 font-yekan-bakh">
+                <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }} className="w-full h-full bg-[#193FE905] backdrop-blur-[20px] rounded-[80px] md:rounded-3xl py-5 px-2 md:px-14 font-yekan-bakh">
                     <AnimatePresence mode="wait">
                         {service == null ? (
                             <motion.div 
@@ -142,7 +142,7 @@ export default function Services() {
                             </motion.div>
                         )}
                     </AnimatePresence>
-                </div>
+                </motion.div>
             </motion.div>
             <div
                 onClick={() => scrollTo('tweets')}

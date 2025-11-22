@@ -60,7 +60,7 @@ export default function Services() {
                 <div className="px-6 md:px-80">
                     <TitleGlass title="خدمات ما" />
                 </div>
-                <div className="w-full h-full bg-[#193FE905] backdrop-blur-[20px] rounded-3xl py-5 px-14 font-yekan-bakh">
+                <div className="w-full h-full bg-[#193FE905] backdrop-blur-[20px] rounded-[80px] md:rounded-3xl py-5 px-2 md:px-14 font-yekan-bakh">
                     <AnimatePresence mode="wait">
                         {service == null ? (
                             <motion.div 
@@ -70,7 +70,7 @@ export default function Services() {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                             >
-                                <div className="flex gap-5 text-2xl md:text-4xl w-full">
+                                <div className="flex gap-1 md:gap-5 text-4xl w-full">
                                     <div className="flex-1 text-left">
                                         <Plus className="mr-auto"/>
                                     </div>
@@ -82,7 +82,7 @@ export default function Services() {
                                         خـــدمـــــــات
                                     </motion.span>
                                 </div>
-                                <div className="flex gap-5 text-2xl md:text-4xl w-full">
+                                <div className="flex gap-1 md:gap-5 text-4xl w-full">
                                     <div className="flex-1 text-left">
                                         <Plus className="mr-auto text-[#0205B6]"/>
                                     </div>
@@ -94,7 +94,7 @@ export default function Services() {
                                         آمـــــــوزش
                                     </motion.span>
                                 </div>
-                                <div className="flex gap-5 text-2xl md:text-4xl w-full">
+                                <div className="flex gap-1 md:gap-5 text-4xl w-full">
                                     <div className="flex-1 text-left">
                                         <Plus className="mr-auto text-[#DF3D28]"/>
                                     </div>
@@ -118,22 +118,26 @@ export default function Services() {
                                 <div className="flex justify-between items-center">
                                     <motion.div 
                                         layoutId={`${service}-title`}
-                                        className="font-semibold text-[45px]"
+                                        className="font-semibold text-[45px] mx-auto md:mx-0"
                                     >
                                         {serviceMap[service]}
                                     </motion.div>
-                                    <div className="flex items-center gap-4 hover:text-black/70 transition-colors cursor-pointer" onClick={() => setService(null)}>
+                                    <div className="hidden md:flex items-center gap-4 hover:text-black/70 transition-colors cursor-pointer" onClick={() => setService(null)}>
                                         <span className="text-[25px] cursor-pointer"> سرویس ها</span>
                                         <img src="/images/arrow.svg" alt="arrow icon" className="w-8 cursor-pointer" />
                                     </div>
                                 </div>
                                 <div className="h-full mt-10">
                                     {servicesItems[service].map((item, index) => (
-                                        <div key={index} className="flex items-center gap-2 text-2xl opacity-75 font-medium leading-10">
+                                        <div key={index} className="flex items-center gap-2 text-sm md:text-2xl opacity-75 font-medium leading-10">
                                             <span className="w-2 h-2 bg-black rounded-full inline-block"></span>
                                             <span>{item}</span>
                                         </div>
                                     ))}
+                                </div>
+                                <div className="flex md:hidden items-center justify-center gap-2 hover:text-black/70 transition-colors cursor-pointer" onClick={() => setService(null)}>
+                                        <span className="cursor-pointer"> سرویس ها</span>
+                                        <img src="/images/arrow.svg" alt="arrow icon" className="w-4 cursor-pointer" />
                                 </div>
                             </motion.div>
                         )}

@@ -57,8 +57,8 @@ export default function Services() {
                 transition={{ duration: 0, ease: [0.22, 1, 0.36, 1] }}
                 className="flex flex-col justify-between h-full gap-5"
             >
-                <div className="px-6 md:px-80">
-                    <TitleGlass title="خدمات ما" />
+                <div className="px-6 md:px-50">
+                    <TitleGlass title="سرویس های" />
                 </div>
                 <div className="w-full h-full bg-[#193FE905] backdrop-blur-[20px] rounded-[80px] md:rounded-3xl py-5 px-2 md:px-14 font-yekan-bakh">
                     <AnimatePresence mode="wait">

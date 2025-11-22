@@ -70,37 +70,37 @@ export default function Services() {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                             >
-                                <div className="flex gap-1 md:gap-5 text-4xl w-full">
-                                    <div className="flex-1 text-left">
+                                <div className="flex gap-1 md:gap-5 text-4xl w-full justify-center md:justify-start">
+                                    <div className="md:flex-1 text-left">
                                         <Plus className="mr-auto"/>
                                     </div>
                                     <motion.span 
                                         layoutId="service-title"
-                                        className="flex-1 hover:text-black/70 transition-colors text-right font-semibold cursor-pointer" 
+                                        className="md:flex-1 hover:text-black/70 transition-colors text-right font-semibold cursor-pointer" 
                                         onClick={() => setService('service')}
                                     >
                                         خـــدمـــــــات
                                     </motion.span>
                                 </div>
-                                <div className="flex gap-1 md:gap-5 text-4xl w-full">
-                                    <div className="flex-1 text-left">
+                                <div className="flex gap-1 md:gap-5 text-4xl w-full justify-center md:justify-start">
+                                    <div className="md:flex-1 text-left">
                                         <Plus className="mr-auto text-[#0205B6]"/>
                                     </div>
                                     <motion.span 
                                         layoutId="guide-title"
-                                        className="flex-1 hover:text-black/70 transition-colors text-right font-semibold cursor-pointer" 
+                                        className="md:flex-1 hover:text-black/70 transition-colors text-right font-semibold cursor-pointer" 
                                         onClick={() => setService('guide')}
                                     >
                                         آمـــــــوزش
                                     </motion.span>
                                 </div>
-                                <div className="flex gap-1 md:gap-5 text-4xl w-full">
-                                    <div className="flex-1 text-left">
+                                <div className="flex gap-1 md:gap-5 text-4xl w-full justify-center md:justify-start">
+                                    <div className="md:flex-1 text-left">
                                         <Plus className="mr-auto text-[#DF3D28]"/>
                                     </div>
                                     <motion.span 
                                         layoutId="consultation-title"
-                                        className="flex-1 hover:text-black/70 transition-colors text-right font-semibold cursor-pointer" 
+                                        className="md:flex-1 hover:text-black/70 transition-colors text-right font-semibold cursor-pointer" 
                                         onClick={() => setService('consultation')}
                                     >
                                         مـــــشــــاوره

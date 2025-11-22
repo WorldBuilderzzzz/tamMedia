@@ -151,7 +151,7 @@ export default function Tweets () {
                     {tweets.map((tweet, index) => (
                         <SwiperSlide key={index}>
                             <motion.div
-                                className="bg-white/20 mr-6 pr-8 pl-15 py-4 h-full flex flex-col justify-between rounded-[40px] border backdrop-blur-[20px] border-[#7C7C7C] leading-8 hover:bg-white/10 group cursor-pointer transition-all duration-300"
+                                className="bg-white/20 space-y-5 mr-6 pr-8 pl-15 py-4 h-full flex flex-col justify-between rounded-[40px] border backdrop-blur-[20px] border-[#7C7C7C] leading-8 hover:bg-white/10 group cursor-pointer transition-all duration-300"
                                 onClick={() => window.open(`https://www.instagram.com/${tweet.instagram_id}`, '_blank')}
                                 role="link"
                                 tabIndex={0}

@@ -55,7 +55,7 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0, ease: [0.22, 1, 0.36, 1] }}
-                className="flex flex-col justify-between h-full"
+                className="flex flex-col justify-between h-full gap-5"
             >
                 <div className="px-6 md:px-80">
                     <TitleGlass title="خدمات ما" />
@@ -70,7 +70,7 @@ export default function Services() {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                             >
-                                <div className="flex gap-5 text-4xl w-full">
+                                <div className="flex gap-5 text-2xl md:text-4xl w-full">
                                     <div className="flex-1 text-left">
                                         <Plus className="mr-auto"/>
                                     </div>
@@ -82,7 +82,7 @@ export default function Services() {
                                         خـــدمـــــــات
                                     </motion.span>
                                 </div>
-                                <div className="flex gap-5 text-4xl w-full">
+                                <div className="flex gap-5 text-2xl md:text-4xl w-full">
                                     <div className="flex-1 text-left">
                                         <Plus className="mr-auto text-[#0205B6]"/>
                                     </div>
@@ -94,7 +94,7 @@ export default function Services() {
                                         آمـــــــوزش
                                     </motion.span>
                                 </div>
-                                <div className="flex gap-5 text-4xl w-full">
+                                <div className="flex gap-5 text-2xl md:text-4xl w-full">
                                     <div className="flex-1 text-left">
                                         <Plus className="mr-auto text-[#DF3D28]"/>
                                     </div>

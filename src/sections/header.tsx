@@ -83,7 +83,7 @@ const Header = () => {
                         whileHover={{ scale: 1.1, color: "#0205AD" }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        خدمات ما
+                        سرویس‌ها
                     </motion.button>
                     <motion.button
                         onClick={() => scrollTo('tweets')}

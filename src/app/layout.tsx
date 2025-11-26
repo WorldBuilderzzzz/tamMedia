@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
   },
   manifest: "/manifest.json", // TODO: اگر manifest.json دارید
-  metadataBase: new URL("https://tammediaclub.com"), بعد ا
+  metadataBase: new URL("https://tammediaclub.com"),
   alternates: {
     canonical: "/",
   },

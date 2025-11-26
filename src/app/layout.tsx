@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: "تام مدیا - ارائه خدمات دیجیتال مارکتینگ و رسانه. خدمات ما، نتایج موفق و ارتباط با ما.",
     images: [
       {
-        url: "/images/logo.svg",
+        url: "https://tammediaclub.com/images/logo.svg",
         width: 1200,
         height: 630,
         alt: "تام مدیا - TAM MEDIA",
@@ -51,16 +51,20 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "تام مدیا | TAM MEDIA",
     description: "تام مدیا - ارائه خدمات دیجیتال مارکتینگ و رسانه. خدمات ما، نتایج موفق و ارتباط با ما.",
-    images: ["/images/logo.svg"],
+    images: ["https://tammediaclub.com/images/logo.svg"],
     creator: "@tammedia", // TODO: جایگزین کنید با Twitter handle واقعی
   },
   icons: {
     icon: [
-      { url: "/images/logo.svg", type: "image/svg+xml" },
+      // ICO format برای گوگل (اولویت اول)
+      { url: "/logo.ico", sizes: "48x48", type: "image/x-icon" },
+      // PNG format برای سازگاری بهتر
+      { url: "/images/logo.svg", sizes: "any", type: "image/svg+xml" },
     ],
     apple: [
       { url: "/images/logo.svg", sizes: "180x180", type: "image/svg+xml" },
     ],
+    shortcut: "/logo.ico",
   },
   manifest: "/manifest.json", // TODO: اگر manifest.json دارید
   metadataBase: new URL("https://tammediaclub.com"), 

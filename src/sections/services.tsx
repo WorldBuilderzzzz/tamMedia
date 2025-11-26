@@ -3,12 +3,13 @@ import { ArrowLeft, Plus } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
-type serviceType = 'service' | 'guide' | 'consultation'
+type serviceType = 'service' | 'guide' | 'consultation' | 'packages'
 
 const serviceMap: Record<serviceType, string> = {
     "service": "خـــدمـــــــات",
     "guide": "آمـــــــوزش",
-    "consultation": "مـــــشــــاوره"
+    "consultation": "مـــــشــــاوره",
+    "packages": "پکیج‌ها"
 }
 
 const servicesItems: Record<serviceType, string[]> = {
@@ -30,6 +31,9 @@ const servicesItems: Record<serviceType, string[]> = {
         "تحلیل رقبا و بازار هدف در اینستاگرام",
         "مشاوره برندینگ شخصی",
         "طراحی تقویم محتوایی",
+    ],
+    "packages": [
+        
     ]
 }
 
@@ -70,37 +74,60 @@ export default function Services() {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                             >
-                                <div onClick={() => setService('service')} className="cursor-pointer flex gap-1 hover:opacity-80 transition-opacity md:gap-5 text-4xl w-full justify-center md:justify-start">
+                                <div className="flex gap-1 hover:opacity-80 transition-opacity md:gap-5 text-4xl w-full justify-center md:justify-start">
                                     <div className="md:flex-1 text-left">
-                                        <Plus className="mr-auto"/>
+                                        <Plus onClick={() => setService('service')} className="mr-auto cursor-pointer"/>
                                     </div>
                                     <motion.span 
                                         layoutId="service-title"
+                                        onClick={() => setService('service')}
                                         className="md:flex-1 text-right font-semibold" 
                                     >
-                                        خـــدمـــــــات
+                                        <span className="cursor-pointer">
+                                            خـــدمـــــــات
+                                        </span>
                                     </motion.span>
                                 </div>
-                                <div onClick={() => setService('guide')} className="cursor-pointer flex gap-1 hover:opacity-80 transition-opacity md:gap-5 text-4xl w-full justify-center md:justify-start">
+                                <div className="flex gap-1 hover:opacity-80 transition-opacity md:gap-5 text-4xl w-full justify-center md:justify-start">
                                     <div className="md:flex-1 text-left">
-                                        <Plus className="mr-auto text-[#0205B6]"/>
+                                        <Plus onClick={() => setService('packages')} className="cursor-pointe mr-auto text-[#DF3D28]"/>
                                     </div>
                                     <motion.span 
-                                        layoutId="guide-title"
+                                        layoutId="packages-title"
+                                        onClick={() => setService('packages')}
                                         className="md:flex-1 text-right font-semibold" 
                                     >
-                                        آمـــــــوزش
+                                        <span className="cursor-pointer">
+                                            پکیـــج‌ها
+                                        </span>
                                     </motion.span>
                                 </div>
-                                <div onClick={() => setService('consultation')} className="cursor-pointer flex gap-1 hover:opacity-80 transition-opacity md:gap-5 text-4xl w-full justify-center md:justify-start">
+                                <div className="flex gap-1 hover:opacity-80 transition-opacity md:gap-5 text-4xl w-full justify-center md:justify-start">
                                     <div className="md:flex-1 text-left">
-                                        <Plus className="mr-auto text-[#DF3D28]"/>
+                                        <Plus onClick={() => setService('consultation')} className="cursor-pointe mr-auto"/>
                                     </div>
                                     <motion.span 
                                         layoutId="consultation-title"
+                                        onClick={() => setService('consultation')}
                                         className="md:flex-1 text-right font-semibold" 
                                     >
-                                        مـــــشــــاوره
+                                        <span className="cursor-pointer">
+                                            مـــــشــــاوره
+                                        </span>
+                                    </motion.span>
+                                </div>
+                                <div className="flex gap-1 hover:opacity-80 transition-opacity md:gap-5 text-4xl w-full justify-center md:justify-start">
+                                    <div className="md:flex-1 text-left">
+                                        <Plus onClick={() => setService('guide')} className="cursor-pointe mr-auto text-[#0205B6]"/>
+                                    </div>
+                                    <motion.span 
+                                        layoutId="guide-title"
+                                        onClick={() => setService('guide')}
+                                        className="md:flex-1 text-right font-semibold" 
+                                    >
+                                        <span className="cursor-pointer">
+                                            آمـــــــوزش
+                                        </span>
                                     </motion.span>
                                 </div>
                             </motion.div>

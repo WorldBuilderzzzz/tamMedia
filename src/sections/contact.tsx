@@ -19,7 +19,7 @@ export default function Contact() {
         { 
             name: "واتساپ", 
             hoverColor: "#075e54",
-            link: `whatsapp://send?abid=${phoneNumberClean}&text=test`
+            link: `https://api.whatsapp.com/send?phone=${phoneNumberClean}`
         },
         { 
             name: "تماس", 

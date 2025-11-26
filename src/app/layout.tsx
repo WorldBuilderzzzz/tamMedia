@@ -5,17 +5,22 @@ import "../styles/globals.css";
 export const metadata: Metadata = {
   title: {
     default: "تام مدیا | TAM MEDIA",
-    template: "%s | تام مدیا",
+    template: "%s | تام مدیا کلاب",
   },
-  description: "تام مدیا - ارائه خدمات دیجیتال مارکتینگ و رسانه. خدمات ما، نتایج موفق و ارتباط با ما.",
+  description: "تام مدیا (TAM MEDIA) - آژانس خلاق بازاریابی و برندینگ. ما برندها را به‌عنوان موجودیت‌هایی زنده می‌بینیم و با استراتژی‌های هوشمندانه و کمپین‌های تأثیرگذار، روح برند شما را به زندگی می‌آوریم.",
   keywords: [
     "تام مدیا",
     "TAM MEDIA",
+    "تام مدیا کلاب",
+    "TAM MEDIA CLUB",
+    "آژانس بازاریابی",
+    "برندینگ",
     "دیجیتال مارکتینگ",
     "رسانه",
     "خدمات دیجیتال",
     "بازاریابی دیجیتال",
     "مدیا",
+    "آژانس خلاق",
   ],
   authors: [{ name: "TAM MEDIA" }],
   creator: "TAM MEDIA",
@@ -36,8 +41,8 @@ export const metadata: Metadata = {
     locale: "fa_IR",
     url: "https://tammediaclub.com", 
     siteName: "تام مدیا",
-    title: "تام مدیا | TAM MEDIA",
-    description: "تام مدیا - ارائه خدمات دیجیتال مارکتینگ و رسانه. خدمات ما، نتایج موفق و ارتباط با ما.",
+    title: "تام مدیا کلاب | TAM MEDIA",
+    description: "تام مدیا (TAM MEDIA) - آژانس خلاق بازاریابی و برندینگ. ما برندها را به‌عنوان موجودیت‌هایی زنده می‌بینیم و با استراتژی‌های هوشمندانه و کمپین‌های تأثیرگذار، روح برند شما را به زندگی می‌آوریم.",
     images: [
       {
         url: "https://tammediaclub.com/images/logo.svg",
@@ -50,21 +55,21 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "تام مدیا | TAM MEDIA",
-    description: "تام مدیا - ارائه خدمات دیجیتال مارکتینگ و رسانه. خدمات ما، نتایج موفق و ارتباط با ما.",
+    description: "تام مدیا کلاب (TAM MEDIA CLUB) - آژانس خلاق بازاریابی و برندینگ. ما برندها را به‌عنوان موجودیت‌هایی زنده می‌بینیم و با استراتژی‌های هوشمندانه و کمپین‌های تأثیرگذار، روح برند شما را به زندگی می‌آوریم.",
     images: ["https://tammediaclub.com/images/logo.svg"],
     creator: "@tammedia", // TODO: جایگزین کنید با Twitter handle واقعی
   },
   icons: {
     icon: [
       // ICO format برای گوگل (اولویت اول)
-      { url: "/logo.ico", sizes: "48x48", type: "image/x-icon" },
-      // PNG format برای سازگاری بهتر
+      { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+      // SVG format برای مرورگرهای مدرن
       { url: "/images/logo.svg", sizes: "any", type: "image/svg+xml" },
     ],
     apple: [
       { url: "/images/logo.svg", sizes: "180x180", type: "image/svg+xml" },
     ],
-    shortcut: "/logo.ico",
+    shortcut: "/favicon.ico",
   },
   manifest: "/manifest.json", // TODO: اگر manifest.json دارید
   metadataBase: new URL("https://tammediaclub.com"), 
@@ -101,7 +106,7 @@ export default function RootLayout({
       height: 550,
     },
     image: "https://tammediaclub.com/images/logo.svg",
-    description: "تام مدیا - ارائه خدمات دیجیتال مارکتینگ و رسانه",
+    description: "تام مدیا (TAM MEDIA) - آژانس خلاق بازاریابی و برندینگ که برندها را به‌عنوان موجودیت‌هایی زنده می‌بیند",
     address: {
       "@type": "PostalAddress",
       addressCountry: "IR",

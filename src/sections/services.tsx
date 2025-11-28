@@ -284,35 +284,34 @@ export default function Services() {
                                                     animate={{ opacity: 1 }}
                                                     exit={{ opacity: 0 }}
                                                 >
-                                                <div className="flex flex-col gap-2">
+                                                <ul className="flex flex-col gap-2 list-disc list-inside">
                                                     {packagesData[selectedPackage].features.map((feature, featureIndex) => (
-                                                        <div key={featureIndex} className="flex items-start gap-2 text-sm md:text-2xl opacity-75 font-medium leading-10">
-                                                            <span className="w-2 h-2 bg-black rounded-full inline-block mt-2 flex-shrink-0"></span>
-                                                            <span>{feature}</span>
-                                                        </div>
+                                                        <li key={featureIndex} className="text-sm md:text-2xl opacity-75 font-medium leading-10">
+                                                            {feature}
+                                                        </li>
                                                     ))}
-                                                </div>
+                                                </ul>
                                                 <div className="mt-4 flex flex-col gap-2 text-right items-start">
                                                     <div className="text-base md:text-2xl font-semibold opacity-90 mb-2 text-right text-nowrap">تعداد خروجی‌ها:</div>
-                                                    <div className="flex flex-col gap-2">
+                                                    <ul className="flex flex-col gap-2 list-disc list-inside">
                                                         {packagesData[selectedPackage].outputs.map((output, outputIndex) => (
-                                                            <div key={outputIndex} className="flex items-center gap-2 text-sm md:text-2xl opacity-75 font-medium">
-                                                                <span className="w-2 h-2 bg-black rounded-full inline-block"></span>
-                                                                <span>{output}</span>
-                                                            </div>
+                                                            <li key={outputIndex} className="text-sm md:text-2xl opacity-75 font-medium">
+                                                                {output}
+                                                            </li>
                                                         ))}
-                                                    </div>
+                                                    </ul>
                                                 </div>
                                             </motion.div>
                                             )}
                                         </AnimatePresence>
                                     ) : service && (
-                                        servicesItems[service].map((item, index) => (
-                                            <div key={index} className="flex items-center gap-2 text-sm md:text-2xl opacity-75 font-medium leading-10">
-                                                <span className="w-2 h-2 bg-black rounded-full inline-block"></span>
-                                                <span>{item}</span>
-                                            </div>
-                                        ))
+                                        <ul className="flex flex-col gap-2 list-disc list-inside">
+                                            {servicesItems[service].map((item, index) => (
+                                                <li key={index} className="text-sm md:text-2xl opacity-75 font-medium leading-10">
+                                                    {item}
+                                                </li>
+                                            ))}
+                                        </ul>
                                     )}
                                 </div>
                                 <div className="flex md:hidden items-center justify-center gap-2 hover:text-black/70 transition-colors cursor-pointer flex-shrink-0" onClick={() => {

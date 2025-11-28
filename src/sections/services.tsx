@@ -228,7 +228,7 @@ export default function Services() {
                                         }
                                         className={`font-semibold ${
                                             service === 'packages' && selectedPackage !== null 
-                                                ? 'text-4xl text-right' 
+                                                ? 'text-4xl flex-1 text-center md:text-right' 
                                                 : 'text-[45px] mx-auto md:mx-0'
                                         }`}
                                     >
@@ -270,7 +270,7 @@ export default function Services() {
                                                             <div className="md:flex-1 text-left">
                                                                 <Plus className="mr-auto text-[#DF3D28]"/>
                                                             </div>
-                                                            <span className="md:flex-1 text-right font-semibold text-2xl">
+                                                            <span className="md:flex-1 text-right font-semibold max-sm:text-2xl">
                                                                 {pkg.name}
                                                             </span>
                                                         </div>
@@ -293,10 +293,10 @@ export default function Services() {
                                                     ))}
                                                 </div>
                                                 <div className="mt-4 flex flex-col gap-2 text-right items-start">
-                                                    <div className="text-base md:text-2xl font-semibold opacity-90 mb-2 text-right">تعداد خروجی‌ها:</div>
+                                                    <div className="text-base md:text-2xl font-semibold opacity-90 mb-2 text-right text-nowrap">تعداد خروجی‌ها:</div>
                                                     <div className="flex flex-col gap-2">
                                                         {packagesData[selectedPackage].outputs.map((output, outputIndex) => (
-                                                            <div key={outputIndex} className="flex items-center gap-2 text-sm md:text-2xl opacity-75 font-medium leading-10">
+                                                            <div key={outputIndex} className="flex items-center gap-2 text-sm md:text-2xl opacity-75 font-medium">
                                                                 <span className="w-2 h-2 bg-black rounded-full inline-block"></span>
                                                                 <span>{output}</span>
                                                             </div>
